@@ -1,0 +1,105 @@
+Last login: Tue Feb 11 15:16:23 on ttys000
+maclab-100:~ parkerw$ ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+maclab-100:~ parkerw$ ls /usr
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-100:~ parkerw$ ls ~ /usr
+/Users/parkerw:
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+
+/usr:
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-100:~ parkerw$ ls -l
+total 0
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Desktop
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Documents
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Downloads
+drwx------@ 52 parkerw  UWP\Domain Users  1664 Feb 11 15:16 Library
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Movies
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Music
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Pictures
+drwxr-xr-x+  4 parkerw  UWP\Domain Users   128 Feb 11 15:15 Public
+maclab-100:~ parkerw$ command -options arguments
+-bash: command: -o: invalid option
+command: usage: command [-pVv] command [arg ...]
+maclab-100:~ parkerw$ ls -lt
+total 0
+drwx------@ 52 parkerw  UWP\Domain Users  1664 Feb 11 15:16 Library
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Desktop
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Documents
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Downloads
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Movies
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Music
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Pictures
+drwxr-xr-x+  4 parkerw  UWP\Domain Users   128 Feb 11 15:15 Public
+maclab-100:~ parkerw$ ls -lt --reverse
+ls: illegal option -- -
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+maclab-100:~ parkerw$ ls -tlr
+total 0
+drwxr-xr-x+  4 parkerw  UWP\Domain Users   128 Feb 11 15:15 Public
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Pictures
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Music
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Movies
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Downloads
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Documents
+drwx------+  3 parkerw  UWP\Domain Users    96 Feb 11 15:15 Desktop
+drwx------@ 52 parkerw  UWP\Domain Users  1664 Feb 11 15:16 Library
+maclab-100:~ parkerw$ ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+maclab-100:~ parkerw$ cd Documents/
+maclab-100:Documents parkerw$ ls
+maclab-100:Documents parkerw$ cd ../Downloads/
+maclab-100:Downloads parkerw$ ls
+maclab-100:Downloads parkerw$ cd ../Music/
+maclab-100:Music parkerw$ ls
+maclab-100:Music parkerw$ cd ../Movies/
+maclab-100:Movies parkerw$ ls
+maclab-100:Movies parkerw$ curl
+curl: try 'curl --help' or 'curl --manual' for more information
+maclab-100:Movies parkerw$ cd ~/Downloads/
+maclab-100:Downloads parkerw$ ls
+Bong_Joon-ho_Deauville_2013.jpg
+maclab-100:Downloads parkerw$ file Bong_Joon-ho_Deauville_2013.jpg 
+Bong_Joon-ho_Deauville_2013.jpg: JPEG image data, JFIF standard 1.02, aspect ratio, density 1x1, segment length 16, comment: "*", progressive, precision 8, 563x720, frames 3
+maclab-100:Downloads parkerw$ less /etc/passwd
+maclab-100:Downloads parkerw$ less /etc/passwd
+maclab-100:Downloads parkerw$ cd /
+maclab-100:/ parkerw$ ls -l
+total 52677
+lrwxr-xr-x@  1 ladmin  wheel        13 Oct 11 13:49   -> /Applications
+drwxrwxr-x+ 77 root    admin      2464 Jan 29 15:11 Applications
+drwxr-xr-x   3 root    wheel        96 Aug 26 21:38 Firefox.app
+drwxr-xr-x@  3 ladmin  staff        96 Sep  7 22:15 Google Chrome.app
+drwxr-xr-x+ 64 root    wheel      2048 Feb  6 14:23 Library
+-rw-r--r--@  1 root    wheel     15796 Mar 11  2019 MacOSXReadme.txt
+drwxr-xr-x   3 root    wheel        96 Feb  6 07:00 Network
+-rw-r--r--@  1 root    wheel   5282379 Mar 21  2019 Ricoh_PS_Printers_Vol3_EXP_LIO_Driver.pkg
+-rw-r--r--@  1 root    wheel  21663120 Mar 11  2019 Ricoh_PS_Printers_Vol4_EXP_LIO_Driver.pkg
+drwxr-xr-x@  5 root    wheel       160 May  4  2019 System
+drwxr-xr-x  16 root    admin       512 Feb 11 15:15 Users
+drwxr-xr-x+  4 root    wheel       128 Feb 11 09:27 Volumes
+drwxr-xr-x@ 37 root    wheel      1184 Aug 10  2019 bin
+drwxrwxr-t   2 root    admin        64 Feb 25  2019 cores
+-rw-r--r--   1 root    wheel         0 Dec 11 07:00 default.profraw
+dr-xr-xr-x   3 root    wheel      4403 Feb  6 07:00 dev
+lrwxr-xr-x@  1 root    wheel        11 May  4  2019 etc -> private/etc
+dr-xr-xr-x   2 root    wheel         1 Feb 11 15:21 home
+-rw-r--r--   1 root    wheel       313 Feb 24  2019 installer.failurerequests
+dr-xr-xr-x   2 root    wheel         1 Feb 11 15:21 net
+drwxr-xr-x   6 root    wheel       192 May  4  2019 private
+drwxr-xr-x@ 64 root    wheel      2048 Aug 10  2019 sbin
+lrwxr-xr-x@  1 root    wheel        11 May  4  2019 tmp -> private/tmp
+drwxr-xr-x@  9 root    wheel       288 May  4  2019 usr
+lrwxr-xr-x@  1 root    wheel        11 May  4  2019 var -> private/var
+maclab-100:/ parkerw$ file Firefox.app/
+Firefox.app/: directory
+maclab-100:/ parkerw$ file Ricoh_PS_Printers_Vol3_EXP_LIO_Driver.pkg 
+Ricoh_PS_Printers_Vol3_EXP_LIO_Driver.pkg: xar archive version 1, SHA-1 checksum
+maclab-100:/ parkerw$ cd ~
+maclab-100:~ parkerw$ 
