@@ -1,0 +1,177 @@
+dairy off
+{Unrecognized function or variable 'dairy'.
+} 
+diary off
+a=7; b=cos(a), c=cosh(a)
+
+b =
+
+    0.7539
+
+
+c =
+
+  548.3170
+
+clc
+...
+help sum
+ <strong>sum</strong> Sum of elements.
+    S = <strong>sum</strong>(X) is the sum of the elements of the vector X. If X is a matrix,
+    S is a row vector with the sum over each column. For N-D arrays, 
+    <strong>sum</strong>(X) operates along the first non-singleton dimension.
+ 
+    S = <strong>sum</strong>(X,'all') sums all elements of X.
+ 
+    S = <strong>sum</strong>(X,DIM) sums along the dimension DIM.
+ 
+    S = <strong>sum</strong>(X,VECDIM) operates on the dimensions specified in the vector 
+    VECDIM. For example, <strong>sum</strong>(X,[1 2]) operates on the elements contained in
+    the first and second dimensions of X.
+ 
+    S = <strong>sum</strong>(...,TYPE) specifies the type in which the 
+    sum is performed, and the type of S. Available options are:
+ 
+    'double'    -  S has class double for any input X
+    'native'    -  S has the same class as X
+    'default'   -  If X is floating point, that is double or single,
+                   S has the same class as X. If X is not floating point, 
+                   S has class double.
+ 
+    S = <strong>sum</strong>(...,NANFLAG) specifies how NaN (Not-A-Number) values are 
+    treated. The default is 'includenan':
+ 
+    'includenan' - the sum of a vector containing NaN values is also NaN.
+    'omitnan'    - the sum of a vector containing NaN values
+                   is the sum of all its non-NaN elements. If all 
+                   elements are NaN, the result is 0.
+ 
+    Examples:
+        X = [0 1 2; 3 4 5]
+        sum(X, 1)
+        sum(X, 2)
+ 
+        X = int8(1:20)
+        sum(X)             % returns double(210), accumulates in double
+        sum(X,'native')    % returns int8(127), because it accumulates in
+                           % int8 but overflows and saturates.
+ 
+    See also <a href="matlab:help prod">prod</a>, <a href="matlab:help cumsum">cumsum</a>, <a href="matlab:help diff">diff</a>, <a href="matlab:help accumarray">accumarray</a>, <a href="matlab:help isfloat">isfloat</a>.
+
+    <a href="matlab:doc sum">Documentation for sum</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('sum')">Other functions named sum</a>
+
+lookfor inverse
+<a href="matlab:help betaincinv">betaincinv</a>                     - Inverse incomplete beta function.
+<a href="matlab:help erfcinv">erfcinv</a>                        - Inverse complementary error function.
+<a href="matlab:help erfinv">erfinv</a>                         - Inverse error function.
+<a href="matlab:help gammaincinv">gammaincinv</a>                    - Inverse incomplete gamma function.
+<a href="matlab:help invhilb">invhilb</a>                        - Inverse Hilbert matrix.
+<a href="matlab:help ipermute">ipermute</a>                       - Inverse permute array dimensions.
+<a href="matlab:help dramadah">dramadah</a>                       - Matrix of zeros and ones with large determinant or inverse.
+<a href="matlab:help invhess">invhess</a>                        - Inverse of an upper Hessenberg matrix.
+<a href="matlab:help extractgridvectors">extractgridvectors</a>             - inverse of NDGRID
+<a href="matlab:help inv">inv</a>                            - Matrix inverse.
+<a href="matlab:help pinv">pinv</a>                           - Pseudoinverse.
+<a href="matlab:help acos">acos</a>                           - Inverse cosine, result in radians.
+<a href="matlab:help acosd">acosd</a>                          - Inverse cosine, result in degrees.
+<a href="matlab:help acosh">acosh</a>                          - Inverse hyperbolic cosine.
+<a href="matlab:help acot">acot</a>                           - Inverse cotangent, result in radian.
+<a href="matlab:help acotd">acotd</a>                          - Inverse cotangent, result in degrees.
+<a href="matlab:help acoth">acoth</a>                          - Inverse hyperbolic cotangent.
+<a href="matlab:help acsc">acsc</a>                           - Inverse cosecant, result in radian.
+<a href="matlab:help acscd">acscd</a>                          - Inverse cosecant, result in degrees.
+<a href="matlab:help acsch">acsch</a>                          - Inverse hyperbolic cosecant.
+<a href="matlab:help asec">asec</a>                           - Inverse secant, result in radians.
+<a href="matlab:help asecd">asecd</a>                          - Inverse secant, result in degrees.
+<a href="matlab:help asech">asech</a>                          - Inverse hyperbolic secant.
+<a href="matlab:help asin">asin</a>                           - Inverse sine, result in radians.
+<a href="matlab:help asind">asind</a>                          - Inverse sine, result in degrees.
+<a href="matlab:help asinh">asinh</a>                          - Inverse hyperbolic sine.
+<a href="matlab:help atan">atan</a>                           - Inverse tangent, result in radians.
+<a href="matlab:help atan2">atan2</a>                          - Four quadrant inverse tangent.
+<a href="matlab:help atan2d">atan2d</a>                         - Four quadrant inverse tangent, result in degrees.
+<a href="matlab:help atand">atand</a>                          - Inverse tangent, result in degrees.
+<a href="matlab:help atanh">atanh</a>                          - Inverse hyperbolic tangent.
+<a href="matlab:help ifft">ifft</a>                           - Inverse discrete Fourier transform.
+<a href="matlab:help ifft2">ifft2</a>                          - Two-dimensional inverse discrete Fourier transform.
+<a href="matlab:help ifftn">ifftn</a>                          - N-dimensional inverse discrete Fourier transform.
+<a href="matlab:help ifftshift">ifftshift</a>                      - Inverse FFT shift.
+<a href="matlab:help betaincinv">betaincinv</a>                     - Inverse incomplete beta function.
+<a href="matlab:help gammaincinv">gammaincinv</a>                    - Inverse incomplete gamma function.
+<a href="matlab:help ipermute">ipermute</a>                       - Inverse permute array dimensions.
+<a href="matlab:help acos">acos</a>                           - Symbolic inverse cosine.
+<a href="matlab:help acosd">acosd</a>                          - Inverse cosine, result in degrees.
+<a href="matlab:help acosh">acosh</a>                          - Symbolic inverse hyperbolic cosine.
+<a href="matlab:help acot">acot</a>                           - Symbolic inverse cotangent.
+<a href="matlab:help acotd">acotd</a>                          - sind Inverse cotangent, result in degrees.
+<a href="matlab:help acoth">acoth</a>                          - Symbolic inverse hyperbolic cotangent.
+<a href="matlab:help acsc">acsc</a>                           - Symbolic inverse cosecant.
+<a href="matlab:help acscd">acscd</a>                          - Inverse cosecant, result in degrees.
+<a href="matlab:help acsch">acsch</a>                          - Symbolic inverse hyperbolic cosecant.
+<a href="matlab:help asec">asec</a>                           - Symbolic inverse secant.
+<a href="matlab:help asecd">asecd</a>                          - Inverse secant, result in degrees.
+<a href="matlab:help asech">asech</a>                          - Symbolic inverse hyperbolic secant.
+<a href="matlab:help asin">asin</a>                           - Symbolic inverse sine.
+<a href="matlab:help asind">asind</a>                          - Inverse sine, result in degrees.
+<a href="matlab:help asinh">asinh</a>                          - Symbolic inverse hyperbolic sine.
+<a href="matlab:help atan">atan</a>                           - Symbolic inverse tangent.
+<a href="matlab:help atan2">atan2</a>                          - Symbolic four quadrant inverse tangent
+<a href="matlab:help atand">atand</a>                          - Inverse tangent, result in degrees.
+<a href="matlab:help atanh">atanh</a>                          - Symbolic inverse hyperbolic tangent.
+<a href="matlab:help erfcinv">erfcinv</a>                        - Y = ERFCINV(X) Inverse complementary error function.
+<a href="matlab:help erfinv">erfinv</a>                         - Y = ERFINV(X) Inverse error function.
+<a href="matlab:help finverse">finverse</a>                       - Functional inverse.
+<a href="matlab:help ifourier">ifourier</a>                       - Inverse Fourier integral transform.
+<a href="matlab:help ihtrans">ihtrans</a>                        - Inverse Hilbert transform.
+<a href="matlab:help ilaplace">ilaplace</a>                       - Inverse Laplace transform.
+<a href="matlab:help inv">inv</a>                            - Symbolic matrix inverse.
+<a href="matlab:help iztrans">iztrans</a>                        - Inverse Z-transform.
+<a href="matlab:help pinv">pinv</a>                           - Pseudo inverse of a symbolic matrix A.
+help sqrt
+ <strong>sqrt</strong>   Square root.
+    <strong>sqrt</strong>(X) is the square root of the elements of X. Complex 
+    results are produced if X is not positive.
+ 
+    See also <a href="matlab:help sqrtm">sqrtm</a>, <a href="matlab:help realsqrt">realsqrt</a>, <a href="matlab:help hypot">hypot</a>.
+
+    <a href="matlab:doc sqrt">Documentation for sqrt</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('sqrt')">Other functions named sqrt</a>
+
+doc plot
+diary on
+a=6+12
+
+a =
+
+    18
+
+a=6+12,b=sin(a),c=sinh(a)
+
+a =
+
+    18
+
+
+b =
+
+   -0.7510
+
+
+c =
+
+   3.2830e+07
+
+8/(9+10^2)+11/12*13/14
+
+ans =
+
+    0.9246
+
+8/9+10^2+11/12*13/14
+
+ans =
+
+  101.7401
+
+diary off
