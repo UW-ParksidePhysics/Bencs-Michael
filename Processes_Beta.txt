@@ -1,0 +1,625 @@
+Last login: Thu Feb 20 14:13:19 on ttys000
+maclab-91:~ bencs004$ ps x
+  PID   TT  STAT      TIME COMMAND
+ 8014   ??  S      0:00.02 /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd
+ 8015   ??  S      0:00.58 /usr/sbin/cfprefsd agent
+ 8035   ??  S      0:00.40 /usr/libexec/UserEventAgent (Aqua)
+ 8039   ??  S      0:00.26 /usr/sbin/distnoted agent
+ 8040   ??  S      0:00.23 /usr/sbin/universalaccessd launchd -s
+ 8042   ??  S      0:00.27 /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter -L
+ 8043   ??  S      0:00.26 /usr/libexec/lsd
+ 8044   ??  S      0:01.53 /usr/libexec/trustd --agent
+ 8050   ??  S      0:00.03 /System/Library/CoreServices/backgroundtaskmanagementagent
+ 8055   ??  S      0:00.11 /usr/libexec/secd
+ 8057   ??  S      0:00.33 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+ 8058   ??  S      0:00.16 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd
+ 8060   ??  S      0:00.29 /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+ 8061   ??  S      0:00.15 /System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents
+ 8070   ??  S      0:00.15 /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd
+ 8072   ??  S      0:00.11 /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/
+ 8073   ??  S      0:00.20 /usr/libexec/nsurlsessiond
+ 8076   ??  S      0:00.08 /System/Library/Frameworks/AddressBook.framework/Executables/ContactsAccountsS
+ 8077   ??  S      0:00.06 /System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPers
+ 8081   ??  S      0:00.19 /usr/libexec/secinitd
+ 8082   ??  S      0:00.06 /usr/libexec/rapportd
+ 8084   ??  S      0:00.02 /System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeycha
+ 8087   ??  S      0:00.17 /usr/sbin/usernoted
+ 8090   ??  S      0:00.69 /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/Notificatio
+ 8092   ??  S      0:00.36 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+ 8093   ??  S      0:00.04 /usr/libexec/pboard
+ 8095   ??  S      0:00.01 /System/Library/CoreServices/APFSUserAgent
+ 8096   ??  S      0:00.03 /usr/libexec/networkserviceproxy
+ 8097   ??  S      0:00.52 /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/Calendar
+ 8098   ??  S      0:00.13 /System/Library/CoreServices/talagent
+ 8099   ??  S      0:01.08 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framew
+ 8100   ??  S      0:00.10 /System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent
+ 8103   ??  Ss     0:00.14 /System/Library/PrivateFrameworks/CalendarNotification.framework/Versions/A/XP
+ 8104   ??  S      0:00.43 /System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServices/
+ 8105   ??  S      0:00.49 /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support
+ 8107   ??  S      0:00.47 /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/SafariBookmar
+ 8109   ??  S      0:00.07 /System/Library/CoreServices/mapspushd
+ 8112   ??  S      0:00.20 /System/Library/CoreServices/iconservicesagent
+ 8114   ??  S      0:00.81 /usr/libexec/pkd
+ 8115   ??  S      0:00.07 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/s
+ 8117   ??  S      0:00.24 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8118   ??  S      0:01.14 /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Suppo
+ 8119   ??  S      0:00.05 /usr/libexec/swcd
+ 8120   ??  S      0:00.05 /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/Versions/A/Support
+ 8123   ??  S      0:00.92 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/c
+ 8124   ??  S      0:01.00 /usr/libexec/nsurlstoraged
+ 8126   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteU
+ 8127   ??  S      0:00.14 /System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/
+ 8128   ??  S      0:00.10 /System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd
+ 8129   ??  S      0:00.07 /usr/libexec/fmfd
+ 8130   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteU
+ 8131   ??  S      0:00.05 /System/Library/CoreServices/pbs
+ 8132   ??  S      0:00.27 /usr/libexec/sharingd
+ 8133   ??  S      0:00.01 /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoteage
+ 8134   ??  S      0:00.03 /System/Library/PrivateFrameworks/FamilyCircle.framework/Versions/A/Resources/
+ 8135   ??  Ss     0:00.02 /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteU
+ 8141   ??  S      0:00.16 /System/Library/CoreServices/sharedfilelistd
+ 8147   ??  S      0:00.35 /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices
+ 8184   ??  S      0:22.70 /Applications/Safari.app/Contents/MacOS/Safari -psn_0_1954269
+ 8185   ??  T      0:00.01 /Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word -psn_0_1958366
+ 8187   ??  S      0:35.69 /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal -psn_0_1962463
+ 8188   ??  S      0:01.01 /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+ 8190   ??  S      0:00.39 /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer
+ 8191   ??  S      0:01.53 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ 8194   ??  S      0:01.48 /System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight
+ 8196   ??  S      0:00.40 /System/Library/PrivateFrameworks/CoreParsec.framework/parsecd
+ 8197   ??  Ss     0:00.20 /Applications/Utilities/Adobe Sync/CoreSync/Core Sync.app/Contents/PlugIns/ACC
+ 8200   ??  Ss     0:00.04 /System/Library/PrivateFrameworks/CoreWLANKit.framework/Versions/A/XPCServices
+ 8201   ??  S      0:00.10 /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCS
+ 8202   ??  S      0:00.16 /System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServic
+ 8203   ??  Ss     0:00.01 /System/Library/PrivateFrameworks/login.framework/Versions/A/XPCServices/Login
+ 8206   ??  Ss     0:03.59 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8207   ??  S      0:00.06 /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/SafariLaunchA
+ 8208   ??  S      0:00.11 /usr/libexec/videosubscriptionsd
+ 8210   ??  S      0:00.08 /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd
+ 8211   ??  S      0:00.05 /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks
+ 8213   ??  S      0:00.11 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8214   ??  S      0:00.11 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8215   ??  S      0:00.12 /System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLocation
+ 8216   ??  S      0:00.07 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8217   ??  Ss     0:00.06 /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteU
+ 8224   ??  S      0:00.06 /System/Library/PrivateFrameworks/CacheDelete.framework/deleted
+ 8225   ??  Ss     0:00.12 /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDec
+ 8226   ??  Ss     0:00.03 /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/XPCSe
+ 8239   ??  S      0:00.01 SafeEjectGPUAgent
+ 8241   ??  S      0:00.02 /System/Library/CoreServices/Menu Extras/SafeEjectGPUExtra.menu/Contents/XPCSe
+ 8246   ??  Ss     0:00.04 /System/Library/Frameworks/iTunesLibrary.framework/Versions/A/XPCServices/com.
+ 8249   ??  Ss     0:00.16 /System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extr
+ 8254   ??  S      0:00.02 /System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistoryPlu
+ 8262   ??  S      0:00.11 /usr/libexec/knowledge-agent
+ 8267   ??  Ss     0:02.26 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8271   ??  S      0:02.33 /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.Safar
+ 8275   ??  S      0:00.24 /System/Library/CoreServices/cloudphotosd.app/Contents/MacOS/cloudphotosd
+ 8278   ??  S      0:00.21 /usr/libexec/adprivacyd
+ 8279   ??  S      0:00.18 /System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar
+ 8280   ??  S      0:00.06 /System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/Fram
+ 8281   ??  S      0:00.79 /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Suppo
+ 8282   ??  Ss     0:00.03 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.
+ 8283   ??  S      0:00.07 /System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Sup
+ 8285   ??  Ss     0:00.06 /System/Library/Frameworks/iTunesLibrary.framework/Versions/A/XPCServices/com.
+ 8286   ??  Ss     0:00.04 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerS
+ 8287   ??  S      0:00.01 /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServices
+ 8289   ??  S      0:00.02 /System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd
+ 8293   ??  S      0:00.02 /System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgen
+ 8295   ??  SN     0:00.06 /usr/local/jamf/bin/jamfAgent
+ 8296   ??  S      0:00.03 /usr/libexec/dmd
+ 8297   ??  S      0:00.07 /System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent
+ 8298   ??  S      0:01.16 /System/Library/CoreServices/Siri.app/Contents/MacOS/Siri launchd
+ 8299   ??  S      0:00.07 /System/Library/Image Capture/Support/icdd
+ 8302   ??  S      0:00.12 /Library/Application Support/Pharos/Notify.app/Contents/MacOS/Notify
+ 8303   ??  S      0:00.10 /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent 
+ 8304   ??  S      0:00.05 /System/Library/CoreServices/cloudpaird
+ 8305   ??  S      0:11.37 /Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app/Contents/M
+ 8306   ??  S      0:00.20 /System/Library/PrivateFrameworks/Noticeboard.framework/Versions/A/Resources/n
+ 8307   ??  S      0:00.06 /System/Library/CoreServices/diagnostics_agent
+ 8308   ??  S      0:06.08 /Library/Application Support/Malwarebytes/Malwarebytes Endpoint Agent/UserAgen
+ 8312   ??  S      0:00.03 /System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/Mac
+ 8313   ??  S      0:00.02 /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -tw
+ 8319   ??  S      0:00.61 /Library/Application Support/Adobe/Adobe Desktop Common/IPCBox/AdobeIPCBroker.
+ 8321   ??  S      0:08.13 /Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app/Contents/M
+ 8322   ??  Ss     0:00.03 /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDec
+ 8323   ??  S      0:03.74 /Library/Application Support/Adobe/Adobe Desktop Common/ADS/Adobe Desktop Serv
+ 8325   ??  S      0:01.16 /Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app/Contents/F
+ 8326   ??  S      0:00.43 /Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app/Contents/M
+ 8329   ??  S      0:01.15 /Library/Application Support/Adobe/Adobe Desktop Common/ADS/Adobe Desktop Serv
+ 8331   ??  S      0:00.67 /Library/Application Support/Adobe/Creative Cloud Libraries/CCLibrary.app/Cont
+ 8336   ??  S      0:00.01 /System/Library/Frameworks/ColorSync.framework/Support/colorsync.useragent
+ 8340   ??  S      0:11.52 /Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app/Contents/M
+ 8343   ??  S      0:00.35 /Applications/Utilities/Adobe Sync/CoreSync/Core Sync.app/Contents/MacOS/Core 
+ 8344   ??  S      0:00.52 /Applications/Utilities/Adobe Creative Cloud Experience/CCXProcess/CCXProcess.
+ 8345   ??  S      0:01.32 /Applications/Utilities/Adobe Sync/CoreSync/Core Sync.app/Contents/Frameworks/
+ 8352   ??  S      0:00.02 /usr/libexec/siriknowledged
+ 8354   ??  S      0:00.02 /System/Library/CoreServices/EscrowSecurityAlert.app/Contents/MacOS/EscrowSecu
+ 8357   ??  Ss     0:00.02 /System/Library/PrivateFrameworks/FMClient.framework/Versions/A/XPCServices/FM
+ 8360   ??  Ss     0:25.37 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8366   ??  S      0:00.04 /System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/
+ 8367   ??  S      0:00.02 /System/Library/CoreServices/Software Update.app/Contents/Resources/softwareup
+ 8370   ??  S      0:00.06 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/s
+ 8371   ??  S      0:00.29 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/s
+ 8372   ??  S      0:00.10 /System/Library/PrivateFrameworks/CommerceKit.framework/Resources/LaterAgent.a
+ 8373   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/XPCServices
+ 8374   ??  Ss     0:00.09 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerS
+ 8376   ??  S      0:00.85 /System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell
+ 8377   ??  S      0:00.10 /usr/libexec/keyboardservicesd
+ 8387   ??  S      0:00.06 /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Versions/A/Support/p
+ 8388   ??  S      0:00.07 /System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryD
+ 8393   ??  S      0:00.02 /System/Library/PrivateFrameworks/QuickLookThumbnailing.framework/Support/com.
+ 8396   ??  S      0:00.11 /usr/libexec/silhouette
+ 8397   ??  Ss     0:01.53 /System/Library/CoreServices/Siri.app/Contents/XPCServices/SiriNCService.xpc/C
+ 8398   ??  S      0:00.79 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynt
+ 8399   ??  S      0:00.02 /System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Support/fo
+ 8400   ??  S      0:00.07 /System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTrac
+ 8401   ??  S      0:00.39 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstoreage
+ 8402   ??  S      0:00.08 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/s
+ 8406   ??  Ss     0:00.24 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerS
+ 8407   ??  S      0:00.01 /usr/libexec/assertiond
+ 8408   ??  Ss     0:00.02 /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/XPCSe
+ 8409   ??  Ss     0:00.01 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.
+ 8410   ??  Ss     0:00.18 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/XPCServices
+ 8418   ??  S      0:00.05 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Dictio
+ 8422   ??  S      0:00.25 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framew
+ 8435   ??  Ss     0:00.29 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8436   ??  Ss     0:04.44 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8437   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerS
+ 8442   ??  Ss     0:00.11 /Applications/Safari.app/Contents/XPCServices/com.apple.Safari.SandboxBroker.x
+ 8443   ??  S      0:00.01 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8444   ??  S      0:00.08 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8445   ??  S      0:01.10 /Applications/Preview.app/Contents/MacOS/Preview -psn_0_2175507
+ 8446   ??  Ss     0:00.03 /System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCSe
+ 8447   ??  S      0:00.04 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8448   ??  S      0:00.05 /System/Library/CoreServices/ScopedBookmarkAgent
+ 8513   ??  S      0:00.08 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framewor
+ 8522   ??  S      0:00.03 /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd
+ 8547   ??  Ss     0:00.12 /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCService
+ 8753 s000  Ss     0:00.01 login -pf bencs004
+ 8754 s000  S      0:00.01 -bash
+ 8760 s000  R+     0:00.00 ps x
+maclab-91:~ bencs004$ ps aux
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+_windowserver     7638   0.3  0.7  7904936 118916   ??  Ss   11:51AM   0:37.01 /System/Library/PrivateFra
+bencs004          8340   0.2  0.8  4887280 137240   ??  S     1:59PM   0:11.85 /Applications/Utilities/Ad
+bencs004          8321   0.1  0.4  4684936  61324   ??  S     1:59PM   0:08.37 /Applications/Utilities/Ad
+bencs004          8187   0.1  1.8  5245504 296728   ??  R     1:59PM   0:37.44 /Applications/Utilities/Te
+root              8749   0.0  0.1  4321804   9952   ??  Ss    2:35PM   0:00.01 automountd
+bencs004          8547   0.0  0.3 89415892  44080   ??  Ss    2:12PM   0:00.12 /System/Library/StagedFram
+bencs004          8522   0.0  0.1  4332088  11996   ??  S     2:11PM   0:00.03 /System/Library/PrivateFra
+bencs004          8513   0.0  0.1  4366332  18420   ??  S     2:09PM   0:00.08 /System/Library/Frameworks
+root              8449   0.0  0.1  4346512  11252   ??  Ss    2:08PM   0:00.04 /usr/libexec/tzd
+bencs004          8448   0.0  0.0  4355052   7724   ??  S     2:07PM   0:00.05 /System/Library/CoreServic
+bencs004          8446   0.0  0.1  4360044  14808   ??  Ss    2:07PM   0:00.03 /System/Library/PrivateFra
+bencs004          8445   0.0  0.6  5072884  93096   ??  S     2:07PM   0:01.10 /Applications/Preview.app/
+bencs004          8443   0.0  0.0  4310356   6760   ??  S     2:07PM   0:00.01 /System/Library/Frameworks
+bencs004          8442   0.0  0.2  5004132  41536   ??  Ss    2:07PM   0:00.12 /Applications/Safari.app/C
+bencs004          8437   0.0  0.1  4837532  15668   ??  Ss    2:07PM   0:00.05 /System/Library/Frameworks
+bencs004          8436   0.0  1.4 89732108 240928   ??  Ss    2:07PM   0:04.45 /System/Library/StagedFram
+bencs004          8435   0.0  0.4 89455164  62512   ??  Ss    2:07PM   0:00.29 /System/Library/StagedFram
+bencs004          8422   0.0  0.1  4388480   9444   ??  S     2:04PM   0:00.25 /System/Library/Frameworks
+bencs004          8418   0.0  0.0  4354440   7180   ??  S     2:03PM   0:00.05 /System/Library/Frameworks
+bencs004          8410   0.0  0.1  4360824  19792   ??  Ss    2:03PM   0:00.18 /System/Library/PrivateFra
+bencs004          8409   0.0  0.1  4310256   9228   ??  Ss    2:03PM   0:00.01 /System/Library/Frameworks
+bencs004          8408   0.0  0.1  4339564  17344   ??  Ss    2:03PM   0:00.02 /System/Library/PrivateFra
+bencs004          8407   0.0  0.0  4327504   6916   ??  S     2:03PM   0:00.01 /usr/libexec/assertiond
+bencs004          8406   0.0  0.1  4846452  23944   ??  Ss    2:03PM   0:00.24 /System/Library/Frameworks
+bencs004          8402   0.0  0.1  4357160  17932   ??  S     2:01PM   0:00.08 /System/Library/PrivateFra
+bencs004          8401   0.0  0.1  4361224  21624   ??  S     2:01PM   0:00.39 /System/Library/PrivateFra
+bencs004          8400   0.0  0.1  4355548  12160   ??  S     2:01PM   0:00.07 /System/Library/PrivateFra
+bencs004          8399   0.0  0.1  4319244   9632   ??  S     2:01PM   0:00.02 /System/Library/PrivateFra
+bencs004          8398   0.0  0.2  4401664  35268   ??  S     2:01PM   0:00.79 /System/Library/Frameworks
+bencs004          8397   0.0  0.3  4934424  55584   ??  Ss    2:00PM   0:01.53 /System/Library/CoreServic
+bencs004          8396   0.0  0.1  4328860  15676   ??  S     2:00PM   0:00.11 /usr/libexec/silhouette
+bencs004          8393   0.0  0.0  4345884   7392   ??  S     2:00PM   0:00.02 /System/Library/PrivateFra
+bencs004          8388   0.0  0.1  4354724  19388   ??  S     2:00PM   0:00.07 /System/Library/PrivateFra
+bencs004          8387   0.0  0.2  4353856  28416   ??  S     2:00PM   0:00.06 /System/Library/PrivateFra
+barre038          8386   0.0  0.1  4360244  10656   ??  S     2:00PM   0:00.11 /usr/libexec/trustd --agen
+alfoq001          8385   0.0  0.1  4360252  10792   ??  S     2:00PM   0:00.11 /usr/libexec/trustd --agen
+ma000003          8384   0.0  0.1  4360244  10860   ??  S     2:00PM   0:00.11 /usr/libexec/trustd --agen
+bencs004          8377   0.0  0.1  4360848  17584   ??  S     2:00PM   0:00.10 /usr/libexec/keyboardservi
+bencs004          8376   0.0  0.4  4569968  68008   ??  S     2:00PM   0:00.85 /System/Library/Services/A
+bencs004          8374   0.0  0.1  4828780  15504   ??  Ss    2:00PM   0:00.09 /System/Library/Frameworks
+bencs004          8373   0.0  0.1  4331432  14756   ??  Ss    2:00PM   0:00.05 /System/Library/PrivateFra
+bencs004          8372   0.0  0.1  4373876  22980   ??  S     2:00PM   0:00.10 /System/Library/PrivateFra
+bencs004          8371   0.0  0.1  4365780  23192   ??  S     2:00PM   0:00.29 /System/Library/PrivateFra
+bencs004          8370   0.0  0.1  4354940  17660   ??  S     2:00PM   0:00.06 /System/Library/PrivateFra
+bencs004          8367   0.0  0.1  4328380  12904   ??  S     2:00PM   0:00.02 /System/Library/CoreServic
+bencs004          8366   0.0  0.1  4416556  15076   ??  S     1:59PM   0:00.04 /System/Library/PrivateFra
+bencs004          8360   0.0  2.7 89849808 451400   ??  Ss    1:59PM   0:25.43 /System/Library/StagedFram
+bencs004          8357   0.0  0.1  4354520  11832   ??  Ss    1:59PM   0:00.02 /System/Library/PrivateFra
+bencs004          8354   0.0  0.2  4327356  27220   ??  S     1:59PM   0:00.02 /System/Library/CoreServic
+bencs004          8352   0.0  0.1  4354620  14292   ??  S     1:59PM   0:00.02 /usr/libexec/siriknowledge
+bencs004          8345   0.0  0.1  4354904  10756   ??  S     1:59PM   0:01.36 /Applications/Utilities/Ad
+bencs004          8344   0.0  0.3  5007556  50860   ??  S     1:59PM   0:00.53 /Applications/Utilities/Ad
+bencs004          8343   0.0  0.2  4960396  29432   ??  S     1:59PM   0:00.35 /Applications/Utilities/Ad
+bencs004          8336   0.0  0.0  4319648   6400   ??  S     1:59PM   0:00.01 /System/Library/Frameworks
+bencs004          8331   0.0  0.3  5027492  58144   ??  S     1:59PM   0:00.67 /Library/Application Suppo
+bencs004          8329   0.0  0.1  4355428  10712   ??  S     1:59PM   0:01.18 /Library/Application Suppo
+bencs004          8326   0.0  0.5  4803560  79284   ??  S     1:59PM   0:00.43 /Applications/Utilities/Ad
+bencs004          8325   0.0  0.1  4355428  10728   ??  S     1:59PM   0:01.20 /Applications/Utilities/Ad
+bencs004          8323   0.0  0.9  5621932 157612   ??  S     1:59PM   0:03.77 /Library/Application Suppo
+bencs004          8322   0.0  0.0  4355660   8240   ??  Ss    1:59PM   0:00.03 /System/Library/Frameworks
+_gamecontrollerd  8320   0.0  0.1  4327864   9948   ??  Ss    1:59PM   0:00.10 /usr/libexec/gamecontrolle
+bencs004          8319   0.0  0.1  4379944  15880   ??  S     1:59PM   0:00.62 /Library/Application Suppo
+bencs004          8313   0.0  0.1  4329020  10880   ??  S     1:59PM   0:00.02 /System/Library/Frameworks
+bencs004          8312   0.0  0.1  4328584  11220   ??  S     1:59PM   0:00.03 /System/Library/Frameworks
+bencs004          8308   0.0  0.2  4402296  35444   ??  S     1:59PM   0:06.26 /Library/Application Suppo
+bencs004          8307   0.0  0.1  4354784  17432   ??  S     1:59PM   0:00.06 /System/Library/CoreServic
+bencs004          8306   0.0  0.1  4377132  22956   ??  S     1:59PM   0:00.20 /System/Library/PrivateFra
+bencs004          8305   0.0  0.4  4720564  60616   ??  S     1:59PM   0:12.04 /Applications/Utilities/Ad
+bencs004          8304   0.0  0.1  4355444  21120   ??  S     1:59PM   0:00.05 /System/Library/CoreServic
+bencs004          8303   0.0  0.1  4882060  15500   ??  S     1:59PM   0:00.10 /System/Library/CoreServic
+bencs004          8302   0.0  0.1  4388368  18148   ??  S     1:59PM   0:00.12 /Library/Application Suppo
+bencs004          8299   0.0  0.1  4355252  16980   ??  S     1:59PM   0:00.07 /System/Library/Image Capt
+bencs004          8298   0.0  0.2  4374988  32552   ??  S     1:59PM   0:01.17 /System/Library/CoreServic
+bencs004          8297   0.0  0.1  4357548  12344   ??  S     1:59PM   0:00.07 /System/Library/Frameworks
+bencs004          8296   0.0  0.1  4355228  18080   ??  S     1:59PM   0:00.03 /usr/libexec/dmd
+bencs004          8295   0.0  0.1  4355080  11720   ??  SN    1:59PM   0:00.06 /usr/local/jamf/bin/jamfAg
+bencs004          8293   0.0  0.1  4353896  13460   ??  S     1:59PM   0:00.02 /System/Library/CoreServic
+bencs004          8289   0.0  0.1  4327368  17100   ??  S     1:59PM   0:00.02 /System/Library/PrivateFra
+bencs004          8287   0.0  0.0  4327756   5532   ??  S     1:59PM   0:00.01 /System/Library/Frameworks
+bencs004          8286   0.0  0.1  4835940  14396   ??  Ss    1:59PM   0:00.04 /System/Library/Frameworks
+bencs004          8285   0.0  0.1  4356584  11852   ??  Ss    1:59PM   0:00.06 /System/Library/Frameworks
+bencs004          8283   0.0  0.1  4359708  18368   ??  S     1:59PM   0:00.07 /System/Library/PrivateFra
+bencs004          8282   0.0  0.1  4327664   9284   ??  Ss    1:59PM   0:00.03 /System/Library/Frameworks
+bencs004          8281   0.0  0.3  4363444  42360   ??  S     1:59PM   0:00.79 /System/Library/PrivateFra
+bencs004          8280   0.0  0.1  4354252  23096   ??  S     1:59PM   0:00.06 /System/Library/PrivateFra
+bencs004          8279   0.0  0.1  4356176   9736   ??  S     1:59PM   0:00.18 /System/Library/Frameworks
+bencs004          8278   0.0  0.1  4358716  21232   ??  S     1:59PM   0:00.21 /usr/libexec/adprivacyd
+bencs004          8275   0.0  0.2  4402204  34716   ??  S     1:59PM   0:00.24 /System/Library/CoreServic
+bencs004          8271   0.0  0.2  4376280  26168   ??  S     1:59PM   0:02.33 /System/Library/PrivateFra
+bencs004          8267   0.0  1.2 106535528 193592   ??  Ss    1:59PM   0:02.26 /System/Library/StagedFram
+bencs004          8262   0.0  0.1  4359328  16464   ??  S     1:59PM   0:00.11 /usr/libexec/knowledge-age
+bencs004          8254   0.0  0.1  4354516  11064   ??  S     1:59PM   0:00.02 /System/Library/PrivateFra
+bencs004          8249   0.0  0.2  4887660  32276   ??  Ss    1:59PM   0:00.16 /System/Library/CoreServic
+bencs004          8246   0.0  0.1  4356584  11844   ??  Ss    1:59PM   0:00.04 /System/Library/Frameworks
+bencs004          8241   0.0  0.1  4338696  10396   ??  S     1:59PM   0:00.02 /System/Library/CoreServic
+bencs004          8239   0.0  0.1  4822288   9020   ??  S     1:59PM   0:00.01 SafeEjectGPUAgent
+bencs004          8226   0.0  0.1  4327384  15356   ??  Ss    1:59PM   0:00.03 /System/Library/PrivateFra
+bencs004          8225   0.0  0.1  4389564  17464   ??  Ss    1:59PM   0:00.12 /System/Library/Frameworks
+bencs004          8224   0.0  0.1  4357052   9124   ??  S     1:59PM   0:00.06 /System/Library/PrivateFra
+bencs004          8217   0.0  0.1  4355280  12784   ??  Ss    1:59PM   0:00.06 /System/Library/PrivateFra
+bencs004          8215   0.0  0.1  4375112  16672   ??  S     1:59PM   0:00.12 /System/Library/CoreServic
+bencs004          8214   0.0  0.2  4356720  30216   ??  S     1:59PM   0:00.11 /System/Library/Frameworks
+bencs004          8213   0.0  0.1  4340228  21124   ??  S     1:59PM   0:00.11 /System/Library/Frameworks
+bencs004          8211   0.0  0.0  4327704   6000   ??  S     1:59PM   0:00.05 /System/Library/Frameworks
+bencs004          8210   0.0  0.1  4358016  10036   ??  S     1:59PM   0:00.08 /System/Library/PrivateFra
+bencs004          8208   0.0  0.1  4356324  13240   ??  S     1:59PM   0:00.11 /usr/libexec/videosubscrip
+bencs004          8207   0.0  0.2  4470076  37036   ??  S     1:59PM   0:00.06 /System/Library/CoreServic
+bencs004          8206   0.0  0.3  4482856  50028   ??  Ss    1:59PM   0:03.60 /System/Library/StagedFram
+bencs004          8203   0.0  0.0  4327636   5088   ??  Ss    1:59PM   0:00.01 /System/Library/PrivateFra
+bencs004          8202   0.0  0.1  4380232  20208   ??  S     1:59PM   0:00.16 /System/Library/CoreServic
+bencs004          8201   0.0  0.2  4455508  33628   ??  S     1:59PM   0:00.10 /System/Library/StagedFram
+bencs004          8200   0.0  0.1  4354300  13440   ??  Ss    1:59PM   0:00.04 /System/Library/PrivateFra
+bencs004          8197   0.0  0.3  4420280  50836   ??  Ss    1:59PM   0:00.20 /Applications/Utilities/Ad
+bencs004          8196   0.0  0.2  4367044  25980   ??  S     1:59PM   0:00.41 /System/Library/PrivateFra
+bencs004          8194   0.0  0.5  4999772  79088   ??  S     1:59PM   0:01.48 /System/Library/CoreServic
+bencs004          8191   0.0  0.4  4954272  61896   ??  S     1:59PM   0:01.53 /System/Library/CoreServic
+bencs004          8190   0.0  0.3  4922768  45680   ??  S     1:59PM   0:00.39 /System/Library/CoreServic
+bencs004          8188   0.0  1.0  5044872 173732   ??  S     1:59PM   0:01.02 /System/Library/CoreServic
+bencs004          8185   0.0  0.0  4299628     24   ??  T     1:59PM   0:00.01 /Applications/Microsoft Wo
+bencs004          8184   0.0  0.7  6635288 119272   ??  S     1:59PM   0:22.71 /Applications/Safari.app/C
+bencs004          8147   0.0  0.1  4367240  19648   ??  S     1:59PM   0:00.35 /System/Library/PrivateFra
+bencs004          8141   0.0  0.1  4355988   9412   ??  S     1:59PM   0:00.16 /System/Library/CoreServic
+bencs004          8135   0.0  0.0  4327160   5628   ??  Ss    1:59PM   0:00.02 /System/Library/PrivateFra
+bencs004          8134   0.0  0.1  4354624  18440   ??  S     1:59PM   0:00.03 /System/Library/PrivateFra
+bencs004          8133   0.0  0.0  4327200   6220   ??  S     1:59PM   0:00.01 /System/Library/PrivateFra
+bencs004          8132   0.0  0.2  4364156  34864   ??  S     1:59PM   0:00.27 /usr/libexec/sharingd
+bencs004          8131   0.0  0.1  4358864   8592   ??  S     1:59PM   0:00.05 /System/Library/CoreServic
+bencs004          8130   0.0  0.1  4355280  12588   ??  Ss    1:59PM   0:00.05 /System/Library/PrivateFra
+bencs004          8129   0.0  0.1  4355852  22980   ??  S     1:59PM   0:00.07 /usr/libexec/fmfd
+bencs004          8128   0.0  0.1  4356564  11008   ??  S     1:59PM   0:00.10 /System/Library/PrivateFra
+bencs004          8127   0.0  0.2  4359992  33840   ??  S     1:59PM   0:00.14 /System/Library/PrivateFra
+bencs004          8126   0.0  0.1  4355344  12848   ??  Ss    1:59PM   0:00.05 /System/Library/PrivateFra
+bencs004          8124   0.0  0.1  4362692  16128   ??  S     1:59PM   0:01.00 /usr/libexec/nsurlstoraged
+bencs004          8123   0.0  0.2  4366308  25564   ??  S     1:59PM   0:00.92 /System/Library/PrivateFra
+bencs004          8120   0.0  0.1  4355032  17480   ??  S     1:59PM   0:00.05 /System/Library/PrivateFra
+bencs004          8119   0.0  0.1  4355856   9204   ??  S     1:59PM   0:00.05 /usr/libexec/swcd
+bencs004          8118   0.0  0.3  4389028  53220   ??  S     1:59PM   0:01.14 /System/Library/PrivateFra
+bencs004          8117   0.0  0.2  4594736  34184   ??  S     1:59PM   0:00.26 /System/Library/Frameworks
+bencs004          8115   0.0  0.1  4329024  18228   ??  S     1:59PM   0:00.07 /System/Library/PrivateFra
+bencs004          8114   0.0  0.1  4358524  15228   ??  S     1:59PM   0:00.81 /usr/libexec/pkd
+bencs004          8112   0.0  0.1  4382800  20452   ??  S     1:59PM   0:00.20 /System/Library/CoreServic
+bencs004          8109   0.0  0.1  4356744  18648   ??  S     1:59PM   0:00.07 /System/Library/CoreServic
+bencs004          8107   0.0  0.2  4472124  39668   ??  S     1:59PM   0:00.48 /System/Library/CoreServic
+bencs004          8105   0.0  0.3  4421812  41996   ??  S     1:59PM   0:00.49 /System/Library/PrivateFra
+bencs004          8104   0.0  0.1  4354976  12632   ??  S     1:59PM   0:00.43 /System/Library/PrivateFra
+bencs004          8103   0.0  0.2  4361452  33580   ??  Ss    1:59PM   0:00.14 /System/Library/PrivateFra
+bencs004          8100   0.0  0.1  4371096  15052   ??  S     1:59PM   0:00.10 /System/Library/CoreServic
+bencs004          8099   0.0  0.1  4357716  14072   ??  S     1:59PM   0:01.08 /System/Library/Frameworks
+bencs004          8098   0.0  0.1  4381964  16740   ??  S     1:59PM   0:00.13 /System/Library/CoreServic
+bencs004          8097   0.0  0.2  4363184  40312   ??  S     1:59PM   0:00.52 /System/Library/PrivateFra
+bencs004          8096   0.0  0.1  4355796  12020   ??  S     1:59PM   0:00.03 /usr/libexec/networkservic
+bencs004          8095   0.0  0.0  4311396   5776   ??  S     1:59PM   0:00.01 /System/Library/CoreServic
+bencs004          8093   0.0  0.0  4320088   6540   ??  S     1:59PM   0:00.04 /usr/libexec/pboard
+bencs004          8092   0.0  0.2  4362192  38908   ??  S     1:59PM   0:00.37 /usr/libexec/routined LAUN
+bencs004          8090   0.0  0.4  4943624  70928   ??  S     1:59PM   0:00.69 /System/Library/CoreServic
+bencs004          8087   0.0  0.1  4357272  17716   ??  S     1:59PM   0:00.17 /usr/sbin/usernoted
+bencs004          8084   0.0  0.0  4327508   6332   ??  S     1:59PM   0:00.02 /System/Library/Frameworks
+bencs004          8082   0.0  0.1  4355488  19168   ??  S     1:59PM   0:00.06 /usr/libexec/rapportd
+bencs004          8081   0.0  0.1  4356412  11236   ??  S     1:59PM   0:00.19 /usr/libexec/secinitd
+bencs004          8077   0.0  0.1  4355364  18448   ??  S     1:59PM   0:00.06 /System/Library/PrivateFra
+bencs004          8076   0.0  0.1  4327352  18360   ??  S     1:59PM   0:00.08 /System/Library/Frameworks
+bencs004          8073   0.0  0.1  4359744  19400   ??  S     1:59PM   0:00.20 /usr/libexec/nsurlsessiond
+bencs004          8072   0.0  0.1  4355748  22908   ??  S     1:59PM   0:00.11 /System/Library/PrivateFra
+bencs004          8070   0.0  0.1  4360296  10920   ??  S     1:59PM   0:00.15 /System/Library/PrivateFra
+bencs004          8061   0.0  0.1  4364604  19652   ??  S     1:59PM   0:00.15 /System/Library/PrivateFra
+bencs004          8060   0.0  0.1  4358296   8940   ??  S     1:59PM   0:00.29 /System/Library/Frameworks
+bencs004          8058   0.0  0.2  4363184  32724   ??  S     1:59PM   0:00.16 /System/Library/PrivateFra
+bencs004          8057   0.0  0.2  4369884  35812   ??  S     1:59PM   0:00.33 /System/Library/PrivateFra
+bencs004          8055   0.0  0.1  4358736  14908   ??  S     1:59PM   0:00.11 /usr/libexec/secd
+bencs004          8050   0.0  0.0  4355340   8100   ??  S     1:59PM   0:00.03 /System/Library/CoreServic
+bencs004          8044   0.0  0.2  4382148  32096   ??  S     1:59PM   0:01.53 /usr/libexec/trustd --agen
+bencs004          8043   0.0  0.1  4359856  11608   ??  S     1:59PM   0:00.26 /usr/libexec/lsd
+bencs004          8042   0.0  0.2  4367656  34160   ??  S     1:59PM   0:00.28 /System/Library/Frameworks
+bencs004          8040   0.0  0.1  4368120  13572   ??  S     1:59PM   0:00.23 /usr/sbin/universalaccessd
+bencs004          8039   0.0  0.0  4328420   5012   ??  S     1:59PM   0:00.26 /usr/sbin/distnoted agent
+bencs004          8035   0.0  0.2  4357152  36384   ??  S     1:59PM   0:00.40 /usr/libexec/UserEventAgen
+root              8018   0.0  0.1  4355036  11164   ??  Ss    1:59PM   0:00.03 /System/Library/PrivateFra
+bencs004          8015   0.0  0.0  4327820   3544   ??  S     1:59PM   0:00.59 /usr/sbin/cfprefsd agent
+bencs004          8014   0.0  0.1  4354188  10972   ??  S     1:59PM   0:00.02 /System/Library/Frameworks
+_spotlight        7640   0.0  0.1  4339868  18320   ??  S    11:51AM   0:00.08 /System/Library/Frameworks
+bencs004          7635   0.0  0.2  4913832  25872   ??  Ss   11:51AM   0:00.68 /System/Library/CoreServic
+barre038          7521   0.0  0.0  4327756   5512   ??  S    11:46AM   0:00.01 /System/Library/Frameworks
+barre038          7012   0.0  0.1  4416556  16060   ??  S    10:34AM   0:00.06 /System/Library/PrivateFra
+barre038          6977   0.0  0.1  4354016  23364   ??  S    10:34AM   0:00.06 /System/Library/PrivateFra
+barre038          6911   0.0  0.1  4329020  10808   ??  S    10:34AM   0:00.02 /System/Library/Frameworks
+barre038          6840   0.0  0.1  4355080  10420   ??  S    10:34AM   0:00.02 /System/Library/CoreServic
+_datadetectors    6811   0.0  0.1  4338176  19856   ??  Ss   10:34AM   0:00.50 /usr/libexec/DataDetectors
+barre038          6773   0.0  0.2  4456308  33868   ??  S    10:34AM   0:00.19 /System/Library/StagedFram
+barre038          6759   0.0  0.1  4367036  19472   ??  S    10:34AM   0:00.35 /System/Library/PrivateFra
+barre038          6733   0.0  0.1  4358612  14444   ??  S    10:34AM   0:06.97 /usr/libexec/pkd
+barre038          6695   0.0  0.1  4360868  14244   ??  S    10:34AM   0:00.95 /usr/libexec/secinitd
+barre038          6691   0.0  0.1  4355364  18424   ??  S    10:34AM   0:00.07 /System/Library/PrivateFra
+barre038          6656   0.0  0.1  4359972  12252   ??  S    10:34AM   0:00.42 /usr/libexec/lsd
+barre038          6652   0.0  0.0  4328420   5356   ??  S    10:34AM   0:00.59 /usr/sbin/distnoted agent
+barre038          6612   0.0  0.0  4327768   3576   ??  S    10:34AM   0:00.97 /usr/sbin/cfprefsd agent
+barre038          6611   0.0  0.1  4354188  10948   ??  S    10:34AM   0:00.03 /System/Library/Frameworks
+root              6562   0.0  0.0  4302476   4936   ??  Ss    9:57AM   0:00.01 /usr/libexec/applessdstati
+ma000003          5919   0.0  0.1  4319472   9268   ??  Ss    8:25AM   0:00.01 /System/Library/Frameworks
+ma000003          5916   0.0  0.2  4403020  31744   ??  S     8:25AM   0:00.44 /System/Library/Frameworks
+root              3507   0.0  0.1  4329008  17588   ??  Ss   Wed12PM   0:00.06 /System/Library/PrivateFra
+ma000003          2832   0.0  0.1  4418604  15268   ??  S    Wed10AM   0:00.08 /System/Library/PrivateFra
+ma000003          2830   0.0  0.0  4327756   5580   ??  S    Wed10AM   0:00.02 /System/Library/Frameworks
+ma000003          2826   0.0  0.0  4327796   6128   ??  S    Wed10AM   0:00.21 /System/Library/Frameworks
+ma000003          2758   0.0  0.1  4354016  23340   ??  S    Wed10AM   0:00.06 /System/Library/PrivateFra
+ma000003          2707   0.0  0.1  4329020  10812   ??  S    Wed10AM   0:00.02 /System/Library/Frameworks
+ma000003          2661   0.0  0.1  4355080  10464   ??  S    Wed10AM   0:00.03 /System/Library/CoreServic
+ma000003          2615   0.0  0.2  4456308  34012   ??  S    Wed10AM   0:00.25 /System/Library/StagedFram
+ma000003          2562   0.0  0.1  4368612  19728   ??  S    Wed10AM   0:00.66 /System/Library/PrivateFra
+ma000003          2540   0.0  0.1  4358292  14472   ??  S    Wed10AM   0:03.53 /usr/libexec/pkd
+ma000003          2495   0.0  0.1  4356412  12008   ??  S    Wed10AM   0:00.68 /usr/libexec/secinitd
+ma000003          2491   0.0  0.1  4355364  18788   ??  S    Wed10AM   0:00.12 /System/Library/PrivateFra
+ma000003          2457   0.0  0.1  4359596  11932   ??  S    Wed10AM   0:00.60 /usr/libexec/lsd
+ma000003          2453   0.0  0.0  4328420   5448   ??  S    Wed10AM   0:01.16 /usr/sbin/distnoted agent
+ma000003          2429   0.0  0.0  4327808   3864   ??  S    Wed10AM   0:01.69 /usr/sbin/cfprefsd agent
+ma000003          2428   0.0  0.1  4354188  11000   ??  S    Wed10AM   0:00.05 /System/Library/Frameworks
+_applepay         2234   0.0  0.0  4355092   8124   ??  Ss   Wed10AM   0:00.05 /usr/libexec/nfcd
+root              2052   0.0  0.1  4353788  12740   ??  Ss   Wed10AM   0:00.04 /System/Library/PrivateFra
+root              1543   0.0  0.1  4357124  19572   ??  Ss   Wed08AM   0:00.39 /usr/sbin/spindump
+alfoq001          1537   0.0  0.0  4327756   5576   ??  S    Wed08AM   0:00.01 /System/Library/Frameworks
+alfoq001          1530   0.0  0.0  4327796   5928   ??  S    Wed08AM   0:00.17 /System/Library/Frameworks
+root              1514   0.0  0.2  4367320  26932   ??  Ss   Wed08AM   0:00.52 /System/Library/PrivateFra
+root              1513   0.0  0.1  4354328  10708   ??  Ss   Wed08AM   0:00.03 /System/Library/PrivateFra
+alfoq001          1498   0.0  0.1  4418604  16868   ??  S    Wed08AM   0:00.27 /System/Library/PrivateFra
+root              1137   0.0  0.0  4355836   7792   ??  Ss   Wed08AM   0:00.04 /usr/bin/sysdiagnose
+root              1113   0.0  0.1  4355256  18320   ??  Ss   Wed07AM   0:00.11 /usr/libexec/dmd
+root              1101   0.0  0.1  4355428  13988   ??  Ss   Wed07AM   0:00.23 /Library/PrivilegedHelperT
+root              1082   0.0  0.1  4361100  17496   ??  Ss   Wed07AM   0:03.36 /System/Library/CoreServic
+root              1042   0.0  0.1  4360848  10044   ??  Ss   Wed07AM   0:01.18 /usr/libexec/dprivacyd
+root              1038   0.0  0.0  4328528   6748   ??  Ss   Wed07AM   0:00.04 /usr/libexec/mobileactivat
+alfoq001          1035   0.0  0.1  4354252  23384   ??  S    Wed07AM   0:00.08 /System/Library/PrivateFra
+alfoq001          1020   0.0  0.1  4355080  10440   ??  S    Wed07AM   0:00.03 /System/Library/CoreServic
+alfoq001           982   0.0  0.1  4329020  10816   ??  S    Wed07AM   0:00.02 /System/Library/Frameworks
+alfoq001           963   0.0  0.2  4456308  33716   ??  S    Wed07AM   0:00.17 /System/Library/StagedFram
+alfoq001           955   0.0  0.1  4370616  20704   ??  S    Wed07AM   0:00.75 /System/Library/PrivateFra
+root               951   0.0  0.0  4332892   7860   ??  Ss   Wed07AM   0:00.26 /usr/sbin/filecoordination
+alfoq001           890   0.0  0.1  4358844  14340   ??  S    Wed07AM   0:02.97 /usr/libexec/pkd
+root               842   0.0  0.1  4355276   8544   ??  Ss   Wed07AM   0:00.33 /usr/sbin/wirelessproxd
+root               841   0.0  0.0  4327220   6376   ??  Ss   Wed07AM   0:00.03 /System/Library/CoreServic
+alfoq001           839   0.0  0.1  4362952  13140   ??  S    Wed07AM   0:00.57 /usr/libexec/secinitd
+alfoq001           835   0.0  0.1  4355364  18388   ??  S    Wed07AM   0:00.13 /System/Library/PrivateFra
+root               824   0.0  0.1  4354924  13000   ??  Ss   Wed07AM   0:00.28 /usr/sbin/WirelessRadioMan
+alfoq001           804   0.0  0.1  4360256  12236   ??  S    Wed07AM   0:00.43 /usr/libexec/lsd
+alfoq001           791   0.0  0.0  4328420   5436   ??  S    Wed07AM   0:00.77 /usr/sbin/distnoted agent
+root               786   0.0  0.0  4328852   6664   ??  Ss   Wed07AM   0:00.12 /usr/libexec/securityd_ser
+alfoq001           767   0.0  0.0  4327792   3648   ??  S    Wed07AM   0:01.14 /usr/sbin/cfprefsd agent
+alfoq001           766   0.0  0.1  4354188  10896   ??  S    Wed07AM   0:00.06 /System/Library/Frameworks
+root               754   0.0  0.0  4311592   4932   ??  Ss   Wed07AM   0:00.02 /System/Library/Frameworks
+_captiveagent      660   0.0  0.0  4356024   8384   ??  Ss   Wed07AM   0:00.15 /usr/libexec/captiveagent
+_assetcache        632   0.0  0.1  4357660  13556   ??  Ss   Wed07AM   0:00.10 /usr/libexec/AssetCache/As
+_assetcache        631   0.0  0.1  4358072   9776   ??  Ss   Wed07AM   0:00.50 /System/Library/PrivateFra
+_softwareupdate    630   0.0  0.1  4354944  12320   ??  Ss   Wed07AM   0:00.06 /System/Library/CoreServic
+_softwareupdate    622   0.0  0.0  4328420   2716   ??  S    Wed07AM   0:00.11 /usr/sbin/distnoted agent
+_softwareupdate    621   0.0  0.0  4319448   1476   ??  S    Wed07AM   0:00.07 /usr/sbin/cfprefsd agent
+_spotlight         618   0.0  0.1  4355976  13900   ??  S    Wed07AM   0:04.52 /System/Library/Frameworks
+root               581   0.0  0.1  4328280  11388   ??  Ss   Wed07AM   0:00.07 /System/Library/CoreServic
+root               551   0.0  0.0  4303024    812   ??  SNs  Wed07AM   0:00.01 /usr/libexec/periodic-wrap
+_softwareupdate    550   0.0  0.7  4507060 125748   ??  Ss   Wed07AM   0:36.28 /System/Library/CoreServic
+_fpsd              549   0.0  0.1  4331476   9124   ??  Ss   Wed07AM   0:00.12 /System/Library/PrivateFra
+root               548   0.0  0.1  4357632   8900   ??  Ss   Wed07AM   0:00.43 /System/Library/PrivateFra
+root               547   0.0  0.1  4361808  23140   ??  Ss   Wed07AM   0:00.81 /System/Library/PrivateFra
+root               546   0.0  0.1  4357232  17936   ??  Ss   Wed07AM   0:00.11 /System/Library/PrivateFra
+root               545   0.0  0.1  4364332  22584   ??  Ss   Wed07AM   0:00.77 /System/Library/PrivateFra
+root               533   0.0  0.1  4360424   9220   ??  Ss   Wed07AM   0:00.19 /System/Library/CoreServic
+_spotlight         531   0.0  0.1  4357988  11360   ??  S    Wed07AM   0:00.91 /usr/libexec/trustd --agen
+_spotlight         526   0.0  0.0  4328420   3080   ??  S    Wed07AM   0:00.14 /usr/sbin/distnoted agent
+root               461   0.0  0.0  4327752   7072   ??  Ss   Wed07AM   0:00.01 /System/Library/PrivateFra
+root               401   0.0  0.0  4327744   1608   ??  Ss   Wed07AM   0:00.01 /System/Library/Frameworks
+_analyticsd        398   0.0  0.1  4356388  12044   ??  Ss   Wed07AM   0:01.60 /System/Library/PrivateFra
+root               396   0.0  0.0  4355716   7500   ??  S    Wed07AM   0:00.08 /usr/sbin/systemstats --lo
+root               390   0.0  1.5  4595176 258748   ??  S<s  Wed07AM   0:49.61 /Library/Application Suppo
+root               388   0.0  0.0  4327640   6212   ??  Ss   Wed07AM   0:02.14 /usr/libexec/sysmond
+root               365   0.0  0.0  4356348   8368   ??  Ss   Wed07AM   0:00.18 /System/Library/CoreServic
+root               345   0.0  0.0  4286416   4812   ??  Ss   Wed07AM   0:00.02 /usr/libexec/smd
+_nsurlstoraged     314   0.0  0.0  4327840   7660   ??  Ss   Wed07AM   0:00.18 /usr/libexec/nsurlstoraged
+_netbios           313   0.0  0.1  4329852  10976   ??  SNs  Wed07AM   0:00.98 /usr/sbin/netbiosd
+root               300   0.0  0.1  4355172  22500   ??  Ss   Wed07AM   0:00.09 /usr/libexec/findmydeviced
+root               299   0.0  0.0  4329888   6804   ??  Ss   Wed07AM   0:01.41 /System/Library/PrivateFra
+root               297   0.0  0.0  4328420   2808   ??  S    Wed07AM   0:00.11 /usr/sbin/distnoted agent
+root               295   0.0  0.1  4358584   9652   ??  Ss   Wed07AM   0:00.10 /usr/sbin/systemsoundserve
+root               293   0.0  0.0  4327676   5868   ??  Ss   Wed07AM   0:00.03 /System/Library/PrivateFra
+root               290   0.0  0.1  4327636  10352   ??  Ss   Wed07AM   0:00.03 /System/Library/Frameworks
+root               289   0.0  0.1  4328464  10740   ??  Ss   Wed07AM   0:00.03 /System/Library/Frameworks
+root               288   0.0  0.0  4329100   7336   ??  Ss   Wed07AM   0:00.97 /System/Library/PrivateFra
+_atsserver         283   0.0  0.1  4356108  11520   ??  Ss   Wed07AM   0:00.20 /System/Library/Frameworks
+_coreaudiod        273   0.0  0.1  4294636   9188   ??  Ss   Wed07AM   0:00.01 /System/Library/Frameworks
+root               272   0.0  0.0  4320936   8040   ??  Ss   Wed07AM   0:00.03 /System/Library/Frameworks
+root               271   0.0  0.1  4319880  11276   ??  Ss   Wed07AM   0:00.02 /usr/libexec/bootinstalld
+root               270   0.0  0.1  4330644   9844   ??  Ss   Wed07AM   0:00.55 /System/Library/Frameworks
+root               263   0.0  0.0  4328012   6272   ??  Ss   Wed07AM   0:00.02 /usr/libexec/colorsyncd
+root               262   0.0  0.1  4368032  20816   ??  Ss   Wed07AM   0:07.12 /System/Library/PrivateFra
+root               261   0.0  0.0  4327244   6356   ??  Ss   Wed07AM   0:00.05 /usr/libexec/colorsync.dis
+root               260   0.0  0.1  4435248  14776   ??  Ss   Wed07AM   0:00.19 /System/Library/Frameworks
+root               234   0.0  1.0  5133640 175060   ??  Ss   Wed07AM   0:40.06 /System/Library/Frameworks
+root               228   0.0  0.1  4356172  10300   ??  Ss   Wed07AM   0:00.12 /usr/libexec/secinitd
+root               219   0.0  0.1  4309788   9368   ??  Ss   Wed07AM   0:00.01 /usr/libexec/thermald
+root               216   0.0  0.0  4303576   4940   ??  Ss   Wed07AM   0:00.32 /usr/libexec/watchdogd
+_cmiodalassistants   215   0.0  0.1  4385092   9928   ??  Ss   Wed07AM   0:00.24 /System/Library/Frameworks
+root               214   0.0  0.0  4319536   5024   ??  Ss   Wed07AM   0:00.08 /usr/libexec/firmwarecheck
+root               213   0.0  0.1  4354976  11092   ??  Ss   Wed07AM   0:00.13 /usr/libexec/usbd
+root               211   0.0  0.1  4367920  23236   ??  Ss   Wed07AM   0:07.31 /usr/libexec/airportd
+root               210   0.0  0.0  4327196   5964   ??  Ss   Wed07AM   0:00.02 /usr/libexec/apfsd
+root               209   0.0  0.1  4310856   9732   ??  Ss   Wed07AM   0:00.02 /System/Library/CryptoToke
+root               206   0.0  0.1  4357816  13420   ??  Ss   Wed07AM   0:02.36 /System/Library/PrivateFra
+root               204   0.0  0.0  4354936   6724   ??  Ss   Wed07AM   0:01.28 /usr/sbin/mDNSResponderHel
+_mdnsresponder     202   0.0  0.1  4356624   9904   ??  Ss   Wed07AM   0:10.95 /usr/sbin/mDNSResponder
+root               200   0.0  0.2  4363928  27588   ??  Ss   Wed07AM   0:02.77 /usr/libexec/syspolicyd
+root               199   0.0  0.1  4359024  11276   ??  Ss   Wed07AM   0:00.56 /usr/libexec/lsd runAsRoot
+_networkd          198   0.0  0.1  4363940  12928   ??  Ss   Wed07AM   0:04.44 /usr/libexec/symptomsd
+_nsurlsessiond     189   0.0  0.1  4364372  21100   ??  Ss   Wed07AM   0:01.67 /usr/libexec/nsurlsessiond
+_coreaudiod        186   0.0  0.0  4354556   7604   ??  Ss   Wed07AM   0:00.09 /System/Library/Frameworks
+root               184   0.0  0.1  4363628  23896   ??  Ss   Wed07AM   0:07.67 /usr/libexec/mobileassetd
+root               180   0.0  0.0  4328016   5804   ??  Ss   Wed07AM   0:00.05 aslmanager
+root               179   0.0  0.1  4360472   9836   ??  Ss   Wed07AM   0:00.12 /usr/libexec/nehelper
+_coreaudiod        178   0.0  0.1  4336488  15380   ??  Ss   Wed07AM   0:01.59 /usr/sbin/coreaudiod
+root               177   0.0  0.1  4360348  17768   ??  Ss   Wed07AM   0:04.71 /System/Library/PrivateFra
+root               175   0.0  0.1  4363456  18612   ??  Ss   Wed07AM   0:12.11 /usr/libexec/trustd
+root               174   0.0  0.1  4361116  15256   ??  Ss   Wed07AM   0:01.08 /usr/libexec/amfid
+_ctkd              173   0.0  0.1  4328912  10472   ??  Ss   Wed07AM   0:00.02 /System/Library/Frameworks
+root               165   0.0  0.1  4327708   9048   ??  Ss   Wed07AM   0:00.01 /System/Library/Frameworks
+root               158   0.0  0.1  4387676  15408   ??  Ss   Wed07AM   0:03.98 /System/Library/CoreServic
+root               132   0.0  0.1  4358396  12772   ??  Ss   Wed07AM   0:01.72 /System/Library/Frameworks
+root               123   0.0  0.0  4327876   5920   ??  Ss   Wed07AM   0:04.49 /usr/sbin/cfprefsd daemon
+_distnote          122   0.0  0.0  4328420   3728   ??  Ss   Wed07AM   0:00.81 /usr/sbin/distnoted daemon
+root               121   0.0  0.0  4311016   2100   ??  Ss   Wed07AM   0:07.16 /usr/sbin/notifyd
+root               120   0.0  0.1  4355524  14028   ??  Ss   Wed07AM   0:00.38 /usr/libexec/AirPlayXPCHel
+root               119   0.0  0.1  4355244  13092   ??  Ss   Wed07AM   0:00.50 /usr/libexec/corebrightnes
+root               118   0.0  0.2  4391688  37080   ??  Ss   Wed07AM   0:03.68 /usr/libexec/sandboxd
+_hidd              117   0.0  0.0  4330236   7584   ??  Ss   Wed07AM   2:17.06 /usr/libexec/hidd
+root               116   0.0  0.1  4359372  11788   ??  Ss   Wed07AM   0:01.46 /usr/sbin/bluetoothd
+root               114   0.0  0.0  4310988   4900   ??  Ss   Wed07AM   0:00.01 /usr/sbin/KernelEventAgent
+root               113   0.0  0.1  4356444   8620   ??  Ss   Wed07AM   0:00.07 /System/Library/PrivateFra
+root               112   0.0  0.0  4327312   6556   ??  Ss   Wed07AM   0:00.08 /System/Library/CoreServic
+root               108   0.0  0.1  4355860   8480   ??  Ss   Wed07AM   0:00.14 /System/Library/PrivateFra
+root               107   0.0  0.1  4360216  15048   ??  Ss   Wed07AM   0:03.96 /usr/libexec/dasd
+_displaypolicyd    105   0.0  0.1  4330384  10764   ??  Ss   Wed07AM   0:00.08 /usr/libexec/displaypolicy
+root               104   0.0  0.0  4328280   5520   ??  Ss   Wed07AM   0:00.04 autofsd
+_locationd         102   0.0  0.1  4361768  19468   ??  Ss   Wed07AM   0:02.51 /usr/libexec/locationd
+_usbmuxd           100   0.0  0.0  4354684   6344   ??  Ss   Wed07AM   0:00.05 /System/Library/PrivateFra
+root                99   0.0  0.1  4361960  16120   ??  Ss   Wed07AM   0:05.80 /usr/sbin/securityd -i
+_timed              98   0.0  0.0  4354044   7280   ??  Ss   Wed07AM   0:00.24 /usr/libexec/timed
+root                97   0.0  0.1  4360228  16988   ??  Ss   Wed07AM   0:09.65 /System/Library/CoreServic
+root                96   0.0  0.1  4355348   8924   ??  Ss   Wed07AM   0:00.13 /System/Library/PrivateFra
+root                94   0.0  0.1  4358828  22400   ??  Ss   Wed07AM   0:01.98 /System/Library/PrivateFra
+root                93   0.0  0.1  4443580  21248   ??  Ss   Wed07AM   0:32.56 /usr/libexec/opendirectory
+root                89   0.0  0.1  4361964  18056   ??  Ss   Wed07AM   0:01.80 /usr/libexec/coreduetd
+root                88   0.0  0.2  4328956  31592   ??  Ss   Wed07AM   0:00.11 /System/Library/CoreServic
+root                84   0.0  0.0  4353924   7504   ??  Ss   Wed07AM   0:01.54 /usr/libexec/diskarbitrati
+_iconservices       83   0.0  0.0  4328820   6876   ??  Ss   Wed07AM   0:00.06 /System/Library/CoreServic
+root                82   0.0  0.5  4524080  76232   ??  Ss   Wed07AM   0:32.33 /System/Library/Frameworks
+root                76   0.0  0.0  4327344   5512   ??  Ss   Wed07AM   0:00.02 /usr/libexec/keybagd -t 15
+root                75   0.0  0.2  4423796  37124   ??  Ss   Wed07AM   0:11.29 /usr/libexec/logd
+root                72   0.0  0.1  4359228  13568   ??  Ss   Wed07AM   0:00.24 /Library/Application Suppo
+root                71   0.0  0.1  4354908  12464   ??  Ss   Wed07AM   0:09.93 /System/Library/CoreServic
+root                70   0.0  0.1  4359840  14652   ??  Ss   Wed07AM   0:04.30 /usr/libexec/configd
+root                68   0.0  0.1  4361680  11308   ??  Ss   Wed07AM   0:03.42 /usr/sbin/systemstats --da
+_appleevents        67   0.0  0.1  4356596  10660   ??  Ss   Wed07AM   0:00.49 /System/Library/CoreServic
+psnotify            66   0.0  0.0  4328644   6368   ??  Ss   Wed07AM   0:00.02 /Library/Application Suppo
+root                63   0.0  0.1  4359564  24536   ??  Ss   Wed07AM   0:00.38 /System/Library/PrivateFra
+root                62   0.0  0.1  4363824  21664   ??  SNs  Wed07AM   0:01.11 /usr/local/jamf/bin/jamf l
+root                60   0.0  0.1  4482204  18244   ??  Ss   Wed07AM   0:13.76 /System/Library/Frameworks
+root                59   0.0  0.1  4362076  21376   ??  Ss   Wed07AM   0:03.47 /usr/libexec/kextd
+root                58   0.0  0.0  4302808   5264   ??  Ss   Wed07AM   0:00.82 /System/Library/PrivateFra
+root                55   0.0  0.1  4356768  19388   ??  Ss   Wed07AM   0:01.07 /usr/libexec/UserEventAgen
+root                54   0.0  0.0  4328340   1400   ??  Ss   Wed07AM   0:01.07 /usr/sbin/syslogd
+root              8761   0.0  0.0  4268476   1048 s000  R+    2:38PM   0:00.00 ps aux
+root                 1   0.0  0.1  4350784  24020   ??  Ss   Wed07AM   1:18.61 /sbin/launchd
+bencs004          8754   0.0  0.0  4281176   1588 s000  S     2:37PM   0:00.01 -bash
+root              8753   0.0  0.0  4310800   5864 s000  Ss    2:37PM   0:00.01 login -pf bencs004
+root              8752   0.0  0.0  4344876   7068   ??  Ss    2:35PM   0:00.01 /usr/sbin/ocspd
+maclab-91:~ bencs004$ top
+maclab-91:~ bencs004$ xlogo
+-bash: xlogo: command not found
+maclab-91:~ bencs004$ xlogo
+-bash: xlogo: command not found
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ xlog
+-bash: xlog: command not found
+maclab-91:~ bencs004$ xlogo
+-bash: xlogo: command not found
+maclab-91:~ bencs004$ xlogo
+-bash: xlogo: command not found
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ xlogo &
+[1] 8768
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ ps 
+  PID TTY           TIME CMD
+ 8754 ttys000    0:00.02 -bash
+maclab-91:~ bencs004$ jobs
+maclab-91:~ bencs004$ jobs
+maclab-91:~ bencs004$ fg %1
+-bash: fg: %1: no such job
+maclab-91:~ bencs004$ xlogo
+-bash: xlogo: command not found
+maclab-91:~ bencs004$ bg %1
+-bash: bg: %1: no such job
+maclab-91:~ bencs004$ kill 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+maclab-91:~ bencs004$ xlogo &
+[1] 8834
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ kill -l 13546
+-bash: kill: 13546: invalid signal specification
+maclab-91:~ bencs004$ kill -l 17
+STOP
+maclab-91:~ bencs004$ kill -l 17
+STOP
+maclab-91:~ bencs004$ kill -l 127
+-bash: kill: 127: invalid signal specification
+maclab-91:~ bencs004$ xlogo & 
+[1] 8835
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ kill -INT 13601
+-bash: kill: (13601) - No such process
+maclab-91:~ bencs004$ xlogo & 
+[1] 8836
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ kill -SIGINT 13608
+-bash: kill: (13608) - No such process
+maclab-91:~ bencs004$ xlogo & 
+[1] 8837
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ xlogo & 
+[1] 8838
+-bash: xlogo: command not found
+[1]+  Exit 127                xlogo
+maclab-91:~ bencs004$ killall xlogo
+No matching processes belonging to you were found
+maclab-91:~ bencs004$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+
