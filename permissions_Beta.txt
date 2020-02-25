@@ -1,0 +1,182 @@
+Last login: Thu Feb 20 14:03:46 on ttys000
+maclab-91:~ bencs004$ file /etc/shadow
+/etc/shadow: cannot open `/etc/shadow' (No such file or directory)
+maclab-91:~ bencs004$ less /etc/shawdow
+/etc/shawdow: No such file or directory
+maclab-91:~ bencs004$ less /etc/shadow
+/etc/shadow: No such file or directory
+maclab-91:~ bencs004$ id
+uid=415757275(bencs004) gid=1116625352(UWP\Domain Users) groups=1116625352(UWP\Domain Users),12(everyone),62(netaccounts),122488206(UWP\2020-SPRG-PENG-211-001),125416489(UWP\2020-SPRG-PHYS-241-001),404264946(UWP\2019-FALL-MATH-223-001),573945132(UWP\DL_ALL-ENRL-CUR-TRM_A),1020595794(UWP\2019-FALL-MUSI-106-002),1123937312(UWP\2019-SPRG-PHYS-202-001),1179213447(UWP\DL_ALL-ENRL-P2-CUR-F1_A),1690596941(UWP\2019-SPRG-MATH-222-001),2059522209(UWP\2020-SPRG-PENG-214-001),219400799(UWP\DL_ADV-LEWISB),345002033(UWP\2019-SPRG-HESM-270-002),884829712(UWP\DL_ALL-EMPL-STUD_A),1427030562(UWP\Student Users),1981629663(UWP\DL_STU-ENRL-CUR-UGRD_A),2124421418(UWP\PSO All Campus),701(com.apple.sharepoint.group.1),702(com.apple.sharepoint.group.2),333250915(UWP\Publisher),376089144(UWP\CTX-Mathematica),1102773013(UWP\Windows Explorer),1535688893(UWP\PS Elements),1953500456(UWP\Parkside-Campus Info-traverse),2110368857(UWP\SSH),178840370(UWP\Internet Explorer),183735245(UWP\Accessories),336527048(UWP\CreativeServices-Public-full),714050089(UWP\InfoPath),739946822(UWP\Notepad_Plus),839023789(UWP\Visio),993404883(UWP\Project),1111887947(UWP\Parkside-Campus Info-Leadership-read),1289955258(UWP\Emergency List),1371522217(UWP\Adobe Reader),1432469368(UWP\Office),1458183425(UWP\Notepad),1875240670(UWP\IBM Director Client),2144369774(UWP\SPSS)
+maclab-91:~ bencs004$ > foo.txt
+maclab-91:~ bencs004$ ls -l foo.txt
+-rw-r--r--  1 bencs004  UWP\Domain Users  0 Feb 20 14:15 foo.txt
+maclab-91:~ bencs004$ > foo.txt
+maclab-91:~ bencs004$ ls -l foo.txt
+-rw-r--r--  1 bencs004  UWP\Domain Users  0 Feb 20 14:17 foo.txt
+maclab-91:~ bencs004$ chmod 600 foo.txt
+maclab-91:~ bencs004$ ls -l
+total 8
+drwx------+  3 bencs004  UWP\Domain Users    96 Feb  6 14:06 Desktop
+drwx------+  6 bencs004  UWP\Domain Users   192 Feb 20 14:12 Documents
+drwx------+  9 bencs004  UWP\Domain Users   288 Feb 20 14:07 Downloads
+drwx------@ 59 bencs004  UWP\Domain Users  1888 Feb 11 14:00 Library
+drwx------+  3 bencs004  UWP\Domain Users    96 Feb  6 14:06 Movies
+drwx------+  3 bencs004  UWP\Domain Users    96 Feb  6 14:06 Music
+drwx------+  3 bencs004  UWP\Domain Users    96 Feb  6 14:06 Pictures
+drwxr-xr-x+  4 bencs004  UWP\Domain Users   128 Feb  6 14:06 Public
+drwxr-xr-x   3 bencs004  UWP\Domain Users    96 Feb  6 14:29 PycharmProjects
+-rw-------   1 bencs004  UWP\Domain Users     0 Feb 20 14:17 foo.txt
+-rw-r--r--   1 bencs004  UWP\Domain Users   172 Feb 20 14:09 ls-output.txt
+maclab-91:~ bencs004$ ls -l foo.txt
+-rw-------  1 bencs004  UWP\Domain Users  0 Feb 20 14:17 foo.txt
+maclab-91:~ bencs004$ rm -f foo.txt
+maclab-91:~ bencs004$ umask
+0022
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ > foo.txt
+maclab-91:~ bencs004$ ls -l foo.txt
+-rw-r--r--  1 bencs004  UWP\Domain Users  0 Feb 20 14:18 foo.txt
+maclab-91:~ bencs004$ rm -f foo.txt
+maclab-91:~ bencs004$ rm foo.txt
+rm: foo.txt: No such file or directory
+maclab-91:~ bencs004$ umask 0000
+maclab-91:~ bencs004$ > foo.txt
+maclab-91:~ bencs004$ ls -l foo.txt
+-rw-rw-rw-  1 bencs004  UWP\Domain Users  0 Feb 20 14:19 foo.txt
+maclab-91:~ bencs004$ rm foo.txt; umask 0002
+maclab-91:~ bencs004$ cd ~
+maclab-91:~ bencs004$ su [-[l]] [bencs004]
+Password:
+su: Sorry
+maclab-91:~ bencs004$ su [-[l]] [bencs004]
+Password:
+su: Sorry
+maclab-91:~ bencs004$ su -c 'cd ~'
+su: illegal option -- c
+usage: su [-] [-flm] [login [args]]
+maclab-91:~ bencs004$ su -c 'ls -l /root/*'
+su: illegal option -- c
+usage: su [-] [-flm] [login [args]]
+maclab-91:~ bencs004$ sudo backup_script
+Password:
+bencs004 is not in the sudoers file.  This incident will be reported.
+maclab-91:~ bencs004$ sud0-l
+-bash: sud0-l: command not found
+maclab-91:~ bencs004$ sudo cp myfile.txt ~tony
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ sudo ls -l ~tony/myfile.txt
+Password:
+Sorry, try again.
+Password:
+f
+Sorry, try again.
+Password:
+f
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ sudo chown tony: ~tony/myfile.txt
+Password:
+Sorry, try again.
+Password:
+f
+f
+Sorry, try again.
+Password:
+f
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ sudo ls -l ~tony/myfile.txt
+Password:
+Sorry, try again.
+Password:
+f
+fSorry, try again.
+Password:
+
+f
+fsudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ sudo mkdir /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+f
+f
+Sorry, try again.
+Password:
+f
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ sudo chown :music /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+f
+fSorry, try again.
+Password:
+
+f
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ f
+-bash: f: command not found
+maclab-91:~ bencs004$ sudo chmod 775 /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+osudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ oof
+-bash: oof: command not found
+maclab-91:~ bencs004$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ > /usr/local/share/Music/test_file
+-bash: /usr/local/share/Music/test_file: No such file or directory
+maclab-91:~ bencs004$ ls -l /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ sudo chmod g+s /usr/local/share/Music
+\Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-91:~ bencs004$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ umask 0002
+maclab-91:~ bencs004$ rm /usr/local/share/Music/test_file
+rm: /usr/local/share/Music/test_file: No such file or directory
+maclab-91:~ bencs004$ > /usr/local/share/Music/test_file
+-bash: /usr/local/share/Music/test_file: No such file or directory
+maclab-91:~ bencs004$ mkdir /usr/local/share/Music/test_dir
+mkdir: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ ls -l /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-91:~ bencs004$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+
