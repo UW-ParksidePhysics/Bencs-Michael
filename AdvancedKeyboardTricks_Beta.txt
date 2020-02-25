@@ -1,0 +1,41 @@
+Last login: Thu Feb 20 13:59:38 on console
+maclab-91:~ bencs004$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-91:~ bencs004$ ls l
+ls: l: No such file or directory
+maclab-91:~ bencs004$ ls Documents/
+WhatIsTheShellOutput
+maclab-91:~ bencs004$ history | less
+maclab-91:~ bencs004$ history | grep /usr/bin
+   32  history | grep /usr/bin
+maclab-91:~ bencs004$ !88
+-bash: !88: event not found
+maclab-91:~ bencs004$ !32
+history | grep /usr/bin
+   32  history | grep /usr/bin
+   33  history | grep /usr/bin
+maclab-91:~ bencs004$ $
+-bash: $: command not found
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ history | grep /usr/bin > ls-output.txt
+maclab-91:~ bencs004$ history | grep /usr/bin > ls-output.txt
+maclab-91:~ bencs004$ history | grep /usr/bin > ls-output.txt
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ ls Documents/
+WhatIsTheShellOutput
+maclab-91:~ bencs004$ 
+maclab-91:~ bencs004$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
+
