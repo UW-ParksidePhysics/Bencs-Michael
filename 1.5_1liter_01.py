@@ -1,0 +1,15 @@
+V=1000
+dIron=7.8
+print(V*dIron)
+dHuman=1.03
+print(V*dHuman)
+dIce=0.9
+print(V*dIce)
+dSilver=10.5
+print(V*dSilver)
+dPlatinum=21.4
+print(V*dPlatinum)
+dAir=.0012
+print(V*dAir)
+dGasoline=.755
+print(V*dGasoline)
