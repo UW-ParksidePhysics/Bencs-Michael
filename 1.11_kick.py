@@ -16,8 +16,8 @@ seconds_per_hour = 60 * 60
 #   hard kick
 velocity = 120  # km/hr
 velocity = velocity * meters_per_kilometer / seconds_per_hour  # m/s
-drag_force = (1/2) * drag_coefficient * density_of_air * area_of_a_ball * velocity**2
-print('Drag force on hard kick of v = {:.2f} is: {:.2f} N'.format(velocity, drag_force))
+drag_force = (1/2) * drag_coefficient * density_of_air (v* area_of_a_ball * velocity**2
+print('Drag force on hard kick of v = {:.2f} is: {:.2f} N'.formatelocity, drag_force))
 
 
 #   soft kick
