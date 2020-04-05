@@ -2,6 +2,7 @@
 def H(x):
     if x < 0:
         H = 0
+        return H
     elif x>= 0:
         H=1
         return H
