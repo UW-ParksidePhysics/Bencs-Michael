@@ -8,7 +8,7 @@ plt.axis([0, 3, -0.5, 0.6])   #[tmin, tmax, ymin, ymax]
 plt.title('My First Matplotlib Demo')
 plt.show()
 plt.savefig('tmp2.pdf')  #produces pdf
-plt.plot(t, y, label='t^2*exp(-t^2)')
+plt.plot(t, y, label= 't^2*exp(-t^2)')
 
 def f1(t):
     return t**2*np.exp(-t**2)
