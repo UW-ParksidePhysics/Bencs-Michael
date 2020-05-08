@@ -1,0 +1,63 @@
+Last login: Thu Feb 20 13:59:01 on console
+maclab-100:~ debae002$ printenv | less
+maclab-100:~ debae002$ printenv USER
+debae002
+maclab-100:~ debae002$ set | less
+maclab-100:~ debae002$ echo $HOME
+/Users/debae002
+maclab-100:~ debae002$ alias
+maclab-100:~ debae002$ if [ -f ~/.bashrc ]; then
+> . ~/bashrc
+> fi
+maclab-100:~ debae002$ If the file "~/.bashrc" exists, then
+-bash: If: command not found
+maclab-100:~ debae002$ If the file "~/.bashrc" exists, then read the "~/.bashrc" file.
+-bash: If: command not found
+maclab-100:~ debae002$ foo="this is some "
+maclab-100:~ debae002$ echo $foo
+this is some
+maclab-100:~ debae002$ foo=$foo"txt."
+maclab-100:~ debae002$ echo $foo
+this is some txt.
+maclab-100:~ debae002$ export PATH
+maclab-100:~ debae002$ gedit some_file
+-bash: gedit: command not found
+maclab-100:~ debae002$ cd ~
+maclab-100:~ debae002$ ls
+Desktop		Library		Photos		PycharmProjects	dir3		ls-error.txt
+Documents	Movies		Pictures	dir1		directory	ls-output.txt
+Downloads	Music		Public		dir2		lazy_dog.txt	ls.txt
+maclab-100:~ debae002$ cd Documents/
+maclab-100:Documents debae002$ ls
+SeeingTheWorldAsShellSeesIt_Beta.txt	Unix-Navigation.txt			WhatIsTheShellOutPut.txt
+Unicorn.txt				Uploading things to Github		link
+maclab-100:Documents debae002$ gedit Unicorn.txt
+-bash: gedit: command not found
+maclab-100:Documents debae002$ gedit some_file
+-bash: gedit: command not found
+maclab-100:Documents debae002$ cp .bashrc .bashrc.bak
+cp: .bashrc: No such file or directory
+maclab-100:Documents debae002$ nano .bashrc
+maclab-100:Documents debae002$ umask 002
+maclab-100:Documents debae002$ export HISTCONTROL=ignoredups
+maclab-100:Documents debae002$ export HISTSIZE=1000
+maclab-100:Documents debae002$ alias l.='ls -d .* --color=auto'
+maclab-100:Documents debae002$ alias ll='ls -l --color=auto'
+maclab-100:Documents debae002$ gedit unicorn
+-bash: gedit: command not found
+maclab-100:Documents debae002$ gedit Unicorn
+-bash: gedit: command not found
+maclab-100:Documents debae002$ nano .bashrc
+maclab-100:Documents debae002$ source .bashrc
+maclab-100:Documents debae002$ ll
+ls: illegal option -- -
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+maclab-100:Documents debae002$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...6 completed.
+
+[Process completed]
