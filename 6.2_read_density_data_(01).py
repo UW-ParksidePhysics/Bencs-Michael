@@ -4,7 +4,7 @@ import sys
 
 
 def load(densityfile):
-    infile = open(denistyfile, 'r')
+    infile = open('denistyfile.txt', 'r')
     data = {'temperature': [], 'density': []}
 
     for line in infile:
