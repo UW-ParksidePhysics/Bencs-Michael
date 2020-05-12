@@ -1,0 +1,280 @@
+Last login: Thu Feb 13 14:00:23 on ttys000
+maclab-100:~ debae002$ cp -u *.html destination
+cp: illegal option -- u
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:~ debae002$ mkdir directory
+maclab-100:~ debae002$ mkdir dir1
+maclab-100:~ debae002$ mkdir dir1 dir2 dir3
+mkdir: dir1: File exists
+maclab-100:~ debae002$ dir2 dir3
+-bash: dir2: command not found
+maclab-100:~ debae002$ mkdir dir2 dir3
+mkdir: dir2: File exists
+mkdir: dir3: File exists
+maclab-100:~ debae002$ cp item1 item2
+cp: item1: No such file or directory
+maclab-100:~ debae002$ cp item1 item2 dir1
+cp: item1: No such file or directory
+cp: item2: No such file or directory
+maclab-100:~ debae002$ cp dir1 dir2
+cp: dir1 is a directory (not copied).
+maclab-100:~ debae002$ mkdir dir2
+mkdir: dir2: File exists
+maclab-100:~ debae002$ cp dir1 dir2
+cp: dir1 is a directory (not copied).
+maclab-100:~ debae002$ cp dir1/* dir2
+cp: dir1/*: No such file or directory
+maclab-100:~ debae002$ mv item1 item2
+mv: rename item1 to item2: No such file or directory
+maclab-100:~ debae002$ mv item1 dir1
+mv: rename item1 to dir1/item1: No such file or directory
+maclab-100:~ debae002$ rm item1
+rm: item1: No such file or directory
+maclab-100:~ debae002$ rm dir1
+rm: dir1: is a directory
+maclab-100:~ debae002$ cd dir1
+maclab-100:dir1 debae002$ ls
+maclab-100:dir1 debae002$ ls -lt
+maclab-100:dir1 debae002$ pwd
+/Users/debae002/dir1
+maclab-100:dir1 debae002$ cd ..
+maclab-100:~ debae002$ pwd
+/Users/debae002
+maclab-100:~ debae002$ cd ..
+maclab-100:Users debae002$ pwd
+/Users
+maclab-100:Users debae002$ ls
+Shared		admin		garci201	ladmin		nicol012	schul156	townsenj
+abdel009	debae002	huber021	moham023	parkerw		tenut018
+maclab-100:Users debae002$ cd debae002
+maclab-100:~ debae002$ pwd
+/Users/debae002
+maclab-100:~ debae002$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects	dir2		directory
+Documents	Library		Music		Public		dir1		dir3
+maclab-100:~ debae002$ cd Documents/
+maclab-100:Documents debae002$ ls
+Unix-Navigation.txt		WhatIsTheShellOutput.txt
+maclab-100:Documents debae002$ cp WhatIsTheShellOutput.txt Documents/
+cp: directory Documents does not exist
+maclab-100:Documents debae002$ cd ..
+maclab-100:~ debae002$ cp WhatIsTheShellOutput.txt Documents/
+cp: WhatIsTheShellOutput.txt: No such file or directory
+maclab-100:~ debae002$ cp WhatIsTheShellOutput.txt Documents
+cp: WhatIsTheShellOutput.txt: No such file or directory
+maclab-100:~ debae002$ pwd
+/Users/debae002
+maclab-100:~ debae002$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects	dir2		directory
+Documents	Library		Music		Public		dir1		dir3
+maclab-100:~ debae002$ cd Documents/
+maclab-100:Documents debae002$ ls
+Unix-Navigation.txt		WhatIsTheShellOutput.txt
+maclab-100:Documents debae002$ cp WhatIsTheShellOutput.txt /Documents
+cp: /Documents: Permission denied
+maclab-100:Documents debae002$ cp WhatIsTheShellOutput.txt Documents
+maclab-100:Documents debae002$ ls
+Documents			Unix-Navigation.txt		WhatIsTheShellOutput.txt
+maclab-100:Documents debae002$ cp WhatIsTheShellOutput.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:Documents debae002$ mv WhatIsTheShellOutput.txt 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+maclab-100:Documents debae002$ mv WhatIsTheShellOutput.txt Unicorn
+maclab-100:Documents debae002$ mv WhatIsTheShellOutput.txt Unicorn.txt
+mv: rename WhatIsTheShellOutput.txt to Unicorn.txt: No such file or directory
+maclab-100:Documents debae002$ mv Unicorn.txt WhatIsTheShellOutPut.txt
+mv: rename Unicorn.txt to WhatIsTheShellOutPut.txt: No such file or directory
+maclab-100:Documents debae002$ mv Unicorn WhatIsTheShellOutPut.txt
+maclab-100:Documents debae002$ rm Documents
+maclab-100:Documents debae002$ ln file link
+ln: file: No such file or directory
+maclab-100:Documents debae002$ ln -s item link
+maclab-100:Documents debae002$ cd
+maclab-100:~ debae002$ mkdir playground
+maclab-100:~ debae002$ cd playground
+maclab-100:playground debae002$ mkdir dir1 dir2
+maclab-100:playground debae002$ cp /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ ls -l
+total 0
+drwxr-xr-x  2 debae002  UWP\Domain Users  64 Feb 13 14:59 dir1
+drwxr-xr-x  2 debae002  UWP\Domain Users  64 Feb 13 14:59 dir2
+maclab-100:playground debae002$ cp -v /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ ls -l
+total 0
+drwxr-xr-x  2 debae002  UWP\Domain Users  64 Feb 13 14:59 dir1
+drwxr-xr-x  2 debae002  UWP\Domain Users  64 Feb 13 14:59 dir2
+maclab-100:playground debae002$ cp -i /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ cd ..
+maclab-100:~ debae002$ pwd
+/Users/debae002
+maclab-100:~ debae002$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects	dir2		directory
+Documents	Library		Music		Public		dir1		dir3		playground
+maclab-100:~ debae002$ cd playgrund
+-bash: cd: playgrund: No such file or directory
+maclab-100:~ debae002$ cd playground
+maclab-100:playground debae002$ pwd
+/Users/debae002/playground
+maclab-100:playground debae002$ ls
+dir1	dir2
+maclab-100:playground debae002$ mkdir passwd
+maclab-100:playground debae002$ ls
+dir1	dir2	passwd
+maclab-100:playground debae002$ mkdir fun
+maclab-100:playground debae002$ ls
+dir1	dir2	fun	passwd
+maclab-100:playground debae002$ mv passwd fun
+maclab-100:playground debae002$ mv fun dir1
+maclab-100:playground debae002$ mv dir1/fun dir2
+maclab-100:playground debae002$ mv dir2/fun
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+maclab-100:playground debae002$ mv dir2/fun .
+maclab-100:playground debae002$ mv fun dir1
+maclab-100:playground debae002$ cd .
+maclab-100:playground debae002$ ls
+dir1	dir2
+maclab-100:playground debae002$ cd dir1
+maclab-100:dir1 debae002$ ls
+fun
+maclab-100:dir1 debae002$ cd fun
+maclab-100:fun debae002$ ls
+passwd
+maclab-100:fun debae002$ cd passwd
+maclab-100:passwd debae002$ ls
+maclab-100:passwd debae002$ cd .
+maclab-100:passwd debae002$ pwd
+/Users/debae002/playground/dir1/fun/passwd
+maclab-100:passwd debae002$ cd ..
+maclab-100:fun debae002$ cd ..
+maclab-100:dir1 debae002$ cd ..
+maclab-100:playground debae002$ cp /etc/passwd .
+maclab-100:playground debae002$ ls -l
+total 16
+drwxr-xr-x  3 debae002  UWP\Domain Users    96 Feb 13 15:09 dir1
+drwxr-xr-x  2 debae002  UWP\Domain Users    64 Feb 13 15:09 dir2
+-rw-r--r--  1 debae002  UWP\Domain Users  6804 Feb 13 15:11 passwd
+maclab-100:playground debae002$ cp -v/etc/passwd
+cp: illegal option -- /
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ cp -v/etc/passwd .
+cp: illegal option -- /
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ cp -v /etc/passwd .
+/etc/passwd -> ./passwd
+maclab-100:playground debae002$ cp -i /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-100:playground debae002$ cp -i /etc/passwd .
+overwrite ./passwd? (y/n [n]) y
+maclab-100:playground debae002$ mv passwd fun
+maclab-100:playground debae002$ mv fun dir1
+mv: rename fun to dir1/fun: Is a directory
+maclab-100:playground debae002$ mv dir1/fun dir2
+maclab-100:playground debae002$ mv dir2/ .
+mv: dir2/ and ./dir2/ are identical
+maclab-100:playground debae002$ mv fun dir1
+maclab-100:playground debae002$ mv dir1 dir2
+maclab-100:playground debae002$ ls -l dir2
+total 0
+drwxr-xr-x  3 debae002  UWP\Domain Users  96 Feb 13 15:14 dir1
+drwxr-xr-x  3 debae002  UWP\Domain Users  96 Feb 13 15:07 fun
+maclab-100:playground debae002$ ls -l dir2/dir1
+total 16
+-rw-r--r--  1 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+maclab-100:playground debae002$ mv dir2/dir1 .
+maclab-100:playground debae002$ mv dir1/fun .
+maclab-100:playground debae002$ ln fun fun-hard
+maclab-100:playground debae002$ ln fun dir1/fun-hard
+maclab-100:playground debae002$ ln fun/dir2/fun-hard
+ln: fun/dir2/fun-hard: Not a directory
+maclab-100:playground debae002$ ln fun dir2/fun-hard
+maclab-100:playground debae002$ ls -l
+total 32
+drwxr-xr-x  3 debae002  UWP\Domain Users    96 Feb 13 15:16 dir1
+drwxr-xr-x  4 debae002  UWP\Domain Users   128 Feb 13 15:16 dir2
+-rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+-rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun-hard
+maclab-100:playground debae002$ ls li
+ls: li: No such file or directory
+maclab-100:playground debae002$ ls -li
+total 32
+6302890 drwxr-xr-x  3 debae002  UWP\Domain Users    96 Feb 13 15:16 dir1
+6302891 drwxr-xr-x  4 debae002  UWP\Domain Users   128 Feb 13 15:16 dir2
+6302955 -rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+6302955 -rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun-hard
+maclab-100:playground debae002$ ln -s fun fun-sym
+maclab-100:playground debae002$ ln -s ../fun dir1/fun-sym
+maclab-100:playground debae002$ ln -s ../fun dir2/fun-sym
+maclab-100:playground debae002$ ls -l dir1
+total 16
+-rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun-hard
+lrwxr-xr-x  1 debae002  UWP\Domain Users     6 Feb 13 15:18 fun-sym -> ../fun
+maclab-100:playground debae002$ ln -s /home/debae002/playground/fun dir1/fun-sym
+ln: dir1/fun-sym: File exists
+maclab-100:playground debae002$ ln -s dir1 dir1-sym
+maclab-100:playground debae002$ ls -l
+total 32
+drwxr-xr-x  4 debae002  UWP\Domain Users   128 Feb 13 15:18 dir1
+lrwxr-xr-x  1 debae002  UWP\Domain Users     4 Feb 13 15:20 dir1-sym -> dir1
+drwxr-xr-x  5 debae002  UWP\Domain Users   160 Feb 13 15:18 dir2
+-rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+-rw-r--r--  4 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun-hard
+lrwxr-xr-x  1 debae002  UWP\Domain Users     3 Feb 13 15:18 fun-sym -> fun
+maclab-100:playground debae002$ rm fun-hard
+maclab-100:playground debae002$ ls -l
+total 16
+drwxr-xr-x  4 debae002  UWP\Domain Users   128 Feb 13 15:18 dir1
+lrwxr-xr-x  1 debae002  UWP\Domain Users     4 Feb 13 15:20 dir1-sym -> dir1
+drwxr-xr-x  5 debae002  UWP\Domain Users   160 Feb 13 15:18 dir2
+-rw-r--r--  3 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+lrwxr-xr-x  1 debae002  UWP\Domain Users     3 Feb 13 15:18 fun-sym -> fun
+maclab-100:playground debae002$ rm -i fun
+remove fun? ls -l
+maclab-100:playground debae002$ ls -l
+total 16
+drwxr-xr-x  4 debae002  UWP\Domain Users   128 Feb 13 15:18 dir1
+lrwxr-xr-x  1 debae002  UWP\Domain Users     4 Feb 13 15:20 dir1-sym -> dir1
+drwxr-xr-x  5 debae002  UWP\Domain Users   160 Feb 13 15:18 dir2
+-rw-r--r--  3 debae002  UWP\Domain Users  6804 Feb 13 15:13 fun
+lrwxr-xr-x  1 debae002  UWP\Domain Users     3 Feb 13 15:18 fun-sym -> fun
+maclab-100:playground debae002$ less fun-sym
+maclab-100:playground debae002$ rm -i fun
+remove fun? y
+maclab-100:playground debae002$ ls -l
+total 0
+drwxr-xr-x  4 debae002  UWP\Domain Users  128 Feb 13 15:18 dir1
+lrwxr-xr-x  1 debae002  UWP\Domain Users    4 Feb 13 15:20 dir1-sym -> dir1
+drwxr-xr-x  5 debae002  UWP\Domain Users  160 Feb 13 15:18 dir2
+lrwxr-xr-x  1 debae002  UWP\Domain Users    3 Feb 13 15:18 fun-sym -> fun
+maclab-100:playground debae002$ less fun-sym
+fun-sym: No such file or directory
+maclab-100:playground debae002$ rm fun-sym dir1-sym
+maclab-100:playground debae002$ ls -l
+total 0
+drwxr-xr-x  4 debae002  UWP\Domain Users  128 Feb 13 15:18 dir1
+drwxr-xr-x  5 debae002  UWP\Domain Users  160 Feb 13 15:18 dir2
+maclab-100:playground debae002$ cd rm -r playground
+-bash: cd: rm: No such file or directory
+maclab-100:playground debae002$ cd
+maclab-100:~ debae002$ rm -r playground
+maclab-100:~ debae002$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
