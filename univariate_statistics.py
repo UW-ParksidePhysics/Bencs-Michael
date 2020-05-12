@@ -3,6 +3,26 @@ from numpy import *
 from statistics import stdev
 
 def univariate_statistics(data):
+    #"Calculate statistical characteristics of a data set
+    #   Module name:
+    #               univariate_statistics
+    #   Parameters:
+    #               data: ndarray, shape(2, M)
+    #                x-y data to be characterized. M is the number of data points.
+    #   Returns:
+    #           statistics: ndarray, shape (6,)
+    #           Mean of y, standard deviation of y, minimum x-value, maximum x-value, minimum y-value, maximum y-value
+    #   Raises:
+    #           IndexError
+    #           When data array has inapproriate dimensions (!=2 rows, or <=1 column)."
+
+
+
+
+
+
+
+
 
     if not len(data) ==2:
         print ('IndexError: data array dimensions are all wrong')
