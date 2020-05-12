@@ -18,13 +18,13 @@ max_y = statistics[5]
 
 quadratic_coefficients= quadratic_fit(data)
 
-fit_curve = fit_curve_array(quadratic_coefficients ,min_x ,max_x)
+fit_curve = fit_curve_array(quadratic_coefficients, min_x, max_x)
 
 format_x= xlabel('X-axis')
 format_y= ylabel('Y-axis')
-graph = plot_data_with_fit(data,fit_curve, format_x,format_y)
+graph = plot_data_with_fit(data, fit_curve, format_x, format_y)
 
-square_matrix= ([1,2],[3,4])
+square_matrix= ()
 eigen_vectors= lowest_eigenvectors(square_matrix, 3)
 
 print(eigen_vectors)

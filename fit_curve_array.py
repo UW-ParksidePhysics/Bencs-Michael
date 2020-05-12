@@ -3,8 +3,10 @@ def fit_curve_array(quadratic_coefficients,minimum_x ,maximum_x):
 
 
    try:
-        x = [minimum_x, maximum_x]
-        fit_curve = polyval(quadratic_coefficients, x)
+        x= list(range(minimum_x, maximum_x))
+        x_array= array(x)
+
+        fit_curve = polyval(quadratic_coefficients, x_array)
         return fit_curve
    except ArithmeticError:
        print('ArithmeticError: Somethin aint addin up here')

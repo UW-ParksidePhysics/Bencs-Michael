@@ -1,5 +1,6 @@
 from matplotlib.pyplot import *
 from numpy import *
+from statistics import stdev
 
 def univariate_statistics(data):
 
@@ -19,23 +20,10 @@ def univariate_statistics(data):
         mean = Sum / Len
 
         # Standard deviation
-        data_stan = data
-        count = 0
-        count2 = 0
-        count3 = 0
-        while count < Len:  # IDK if standard deviation accounts for both x and y, but I did that here.
-            data_stan[count2][count3] = (data_stan[count2][count3] - mean) ** 2
-            count += 1
-            count3 += 1
-            if count == Len / 2:
-                count3 = 0
-                count2 += 1
-        Sum_stan = sqrt(sum(data_stan[0]) ** 2 + sum(data_stan[1]) ** 2)
-        Len_stan = sqrt(len(data_stan[0]) ** 2 + len(data_stan[1]) ** 2)
-        standard_deviation = sqrt(Sum_stan / Len_stan)
+        standard_dev= stdev(data[1])
 
         # Statistics
-        statistics = [mean, standard_deviation,
+        statistics = [mean, standard_dev,
                       min_x, max_x,
                       min_y, max_y]
         return statistics

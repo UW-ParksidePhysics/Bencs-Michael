@@ -1,5 +1,7 @@
 def quadratic_fit(data):
     from numpy import polyfit
-
-    quadratic_coefficients = polyfit(data[0], data[1], 2)
+    x= data[0]
+    y= data[1]
+    for i in range(len(data)):
+        quadratic_coefficients = polyfit(x, y, 2)
     return quadratic_coefficients

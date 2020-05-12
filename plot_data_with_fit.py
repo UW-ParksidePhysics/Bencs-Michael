@@ -4,7 +4,7 @@ def plot_data_with_fit(data, fit_curve, format_x, format_y):
     format_x
     format_y
 
-    mp.plot(data[0],data[1], 'b')
-    mp.plot(fit_curve[0], fit_curve[1], 'r+')
+    mp.scatter(data[0],data[1], label = 'Data', s=1)
+    mp.plot(fit_curve, 'r')
     mp.show()
     return
