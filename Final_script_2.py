@@ -10,16 +10,18 @@ potentialParameter= 200
 
 
 matrix= generate_matrix(-10, 10, N_dim, potentialName, potentialParameter)
-eigenvalues, eigenvectors= lowest_eigenvectors(matrix, 2, 5)
+eigenvalues, eigenvectors = lowest_eigenvectors(matrix, 1, 4)
+
+
 
 x = linspace(-10, 10, N_dim)
 
 def eigenvector_plot(x, eigenvectors, N_dim):
     import matplotlib.pyplot as mp
 
-    line1, = mp.plot(x, eigenvectors[0][0:N_dim])  # 4
-    line2, = mp.plot(x, eigenvectors[1][0:N_dim])  # 4
-    line3, = mp.plot(x, eigenvectors[2][0:N_dim])  # 4
+    line1, = mp.plot(x, eigenvectors[0][0:N_dim])
+    line2, = mp.plot(x, eigenvectors[1][0:N_dim])
+    line3, = mp.plot(x, eigenvectors[2][0:N_dim])
     display_graph= True
     mp.xlabel("x [a.u.]")
     mp.ylabel("ψ n ( x ) [a.u.]")

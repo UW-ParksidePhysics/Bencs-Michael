@@ -1,6 +1,6 @@
-def lowest_eigenvectors(square_matrix, number_of_eigenvectors):
-    from numpy import linalg, argsort
-    #Identify eigenvectors with smallest K eigenvalues given input matrix using NumPy's eig  (Links to an external site.)function
+
+
+    # Identify eigenvectors with smallest K eigenvalues given input matrix using NumPy's eig  (Links to an external site.)function
     #       Module name:
     #                    lowest_eigenvectors
     #       Parameters:
@@ -14,7 +14,7 @@ def lowest_eigenvectors(square_matrix, number_of_eigenvectors):
     #                eigenvectors: ndarray, shape(K, M)
     #               Array of K eigenvectors with M components arranged in order corresponding to their eigenvalues. The first index should correspond to the eigenvalue index in the eigenvalues array. The order of the components in the eigenvector remains the same as output by NumPy's eig.
 
-    def lowest_eigenvectors(square_matrix, starting_index, ending_index):
+def lowest_eigenvectors(square_matrix, starting_index, ending_index):
         from numpy import linalg, linspace, sqrt, sin, pi, sum, sort, argsort
 
 
