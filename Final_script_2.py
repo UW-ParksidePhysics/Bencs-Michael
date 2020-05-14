@@ -3,6 +3,28 @@ from lowest_eigenvectors import lowest_eigenvectors
 from numpy import linspace
 import matplotlib.pyplot as mp
 
+#       This is the main script for part 2 in the Scientific Programming Final
+#           If you are looking for part 1 look in Final_Script_1
+#
+#       Param: Potential Name: Name of  given
+#              Numbers of dimensions: Number of dimensions given by Final data
+#              Potential Parameter: 200
+#
+#       Functions :  eigenvector_plot: plots the lowest eigen vectors for as many dimensions given
+#       Returns: This script file returns a graph of a harmonic functions lowest eigen vectors from 1 to 3
+#
+#       Problems: little to no annotations so I apologize if its confusing
+#
+#       This project was one of the hardest things I have done so far in college, I would suggest that using simpler concepts \n
+#               for future classes as I have not gone far enough in chemistry or math to use half these things
+
+
+
+
+
+display_graph= True
+
+
 potentialName = 'hamonic'
 N_dim= 100
 potentialParameter= 200
@@ -32,8 +54,11 @@ def eigenvector_plot(x, eigenvectors, N_dim):
     mp.text(-9.5, -1.75, "Created by Michael 2020-05-12")  # 6
     mp.title("Select Wavefunctions for a Harmonic Potential on a Spatial Grid of 1, 2, 3 Points")  # 7
     mp.savefig("Bencs.harmonic.Eigenvector1, 2, 3.png")
-    mp.show()
+
 eigenvector_plot= eigenvector_plot(x, eigenvectors, N_dim)
 
 
-print(eigenvector_plot)
+if display_graph == True:
+    mp.savefig("Bencs.harmonic.Eigenvector1, 2, 3.png")
+elif display_graph == False:
+    mp.show()

@@ -1,4 +1,4 @@
-def plot_data_with_fit(data, fit_curve, volume_energy):
+def plot_data_with_fit(data, fit_curve, volume_energy, annotations):
     #Create a combined scatter and curve plot for the data and the fit polynomial, respectively, using Pyplot's plot (Links to an external site.) function
     #    module name:
     #               plot_data_with_fit
@@ -19,20 +19,34 @@ def plot_data_with_fit(data, fit_curve, volume_energy):
 
 
     import matplotlib.pyplot as mp
-    mp.title('Final Curve Plot')
+
+    title=('Birch-murnaghan Equation of State for ', annotations[0], 'in DFT ', annotations[2])
+    mp.title(title)
+
+
+
+
 
     line1 = mp.plot(data[0], data[1], 'o')
     line2= mp.plot(volume_energy[0], volume_energy[1],'r+')
     line3= mp.plot(fit_curve[0],fit_curve[1], 'black')
+
+
+    s1= annotations[0]
+    s2= annotations[1]
+    s3= annotations[2]
+    mp.text(205, -163.228, s1)
+    mp.text(230, -163.236, s2)
+    mp.text(220, -163.239, s3)
+
+
     mp.xlabel(r'$ \mathcal{eV/atom}\ $')
     mp.ylabel(r'$ \mathit{Å^3/atom}\ $')
-    mp.legend((line1, line2, line3), ('Data= o', 'Volume vs Energy= Red +', 'Eos Fit= Black'))
-
+    #mp.legend((line1, line2, line3), ('Data= o', 'Volume vs Energy= Red +', 'Eos Fit= Black') )
     mp.text(-9.5, -1.75, "Created by Michael 2020-05-14")
-    mp.title("Volume Vs Energy")
-    mp.savefig("Bencs.harmonic.Eigenvector1, 2, 3.png")
-    mp.show()
-    mp.show()
+
+
+
 
 
 
