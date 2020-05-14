@@ -34,4 +34,4 @@ def lowest_eigenvectors(square_matrix, number_of_eigenvectors):
         ordered_indices = argsort(V)
         eigenvalues = (V[ordered_indices[starting_index:ending_index]])  # [0:number_of_eigenvectors]
         eigenvectors = (D[ordered_indices[starting_index:ending_index]])  # ^^^
-        return eigenvectors
+        return eigenvalues, eigenvectors

@@ -1,4 +1,4 @@
-def plot_data_with_fit(data, fit_curve, format_x, format_y):
+def plot_data_with_fit(data, fit_curve):
     #Create a combined scatter and curve plot for the data and the fit polynomial, respectively, using Pyplot's plot (Links to an external site.) function
     #    module name:
     #               plot_data_with_fit

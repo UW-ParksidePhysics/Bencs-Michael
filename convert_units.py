@@ -1,8 +1,8 @@
 def convert_units(value_to_be_converted, units_of_the_value_to_be_converted_from):
 
-        #:param value_to_be_converted: Somevalue
+        #:param value_to_be_converted: given value
         #:param units_of_the_value_to_be_converted_from: Accepted units: cb/a, rb/a, rb/cb
-        #:param units_to_be_converted_to: Accepted units: ca/a, ev/a, ggp
+        #:param units_to_be_converted_to: Accepted units: ca/a,  ev/a,  ggp
         #:return: value_in_the_requested_units
 
     if units_of_the_value_to_be_converted_from == "cb/a":
