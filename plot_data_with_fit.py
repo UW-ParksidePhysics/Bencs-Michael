@@ -1,4 +1,4 @@
-def plot_data_with_fit(data, fit_curve):
+def plot_data_with_fit(data, fit_curve, volume_energy):
     #Create a combined scatter and curve plot for the data and the fit polynomial, respectively, using Pyplot's plot (Links to an external site.) function
     #    module name:
     #               plot_data_with_fit
@@ -20,10 +20,20 @@ def plot_data_with_fit(data, fit_curve):
 
     import matplotlib.pyplot as mp
     mp.title('Final Curve Plot')
-    format_x
-    format_y
 
-    mp.scatter(data[0],data[1],  label = 'Data', s=1,)
-    mp.plot(fit_curve[0],fit_curve[1], 'black')
+    line1 = mp.plot(data[0], data[1], 'o')
+    line2= mp.plot(volume_energy[0], volume_energy[1],'r+')
+    line3= mp.plot(fit_curve[0],fit_curve[1], 'black')
+    mp.xlabel(r'$ \mathcal{eV/atom}\ $')
+    mp.ylabel(r'$ \mathit{Å^3/atom}\ $')
+    mp.legend((line1, line2, line3), ('Data= o', 'Volume vs Energy= Red +', 'Eos Fit= Black'))
+
+    mp.text(-9.5, -1.75, "Created by Michael 2020-05-14")
+    mp.title("Volume Vs Energy")
+    mp.savefig("Bencs.harmonic.Eigenvector1, 2, 3.png")
     mp.show()
+    mp.show()
+
+
+
     return

@@ -8,7 +8,7 @@ from lowest_eigenvectors import*
 from equations_of_state import fit_eos
 from convert_units import convert_units
 from generate_matrix import generate_matrix
-
+import matplotlib.pyplot as mp
 
 def parse_file(filename):
     axis_names= filename.split('.')
@@ -33,43 +33,43 @@ mean = (statistics[0])
 standard_deviation= statistics[1]
 min_x = statistics[2]
 max_x = statistics[3]
-
+min_y = statistics[4]
+max_y = statistics[5]
 
 quadratic_coefficients= quadratic_fit(data)
 un_data= zip(*data)
 data_list= list(un_data)
 
-Eos_fit = fit_eos(data_list[0], data_list[1], quadratic_coefficients, eos= 'birch-murnaghan', number_of_points=50)
-
-
-fit_curve = fit_curve_array(Eos_fit, min_x, max_x)
-
-un_data= zip(*data)
-data_list= list(un_data)
-
+Eos_fit = fit_eos(data[0], data[1], quadratic_coefficients, eos= 'birch-murnaghan', number_of_points=50)
+fit_curve= fit_curve_array(Eos_fit,min_x, max_x)
 bulkmodulus= 230
 
-volume = convert_units(Eos_fit[0], 'cb/a')
-energy= convert_units(Eos_fit[1], 'rb/a')
+volume = convert_units(data[0], 'cb/a')
+energy= convert_units(data[1], 'rb/a')
+
+
+
+
 
 def annotate_plot(chem_symb):
     import matplotlib.pyplot as mp
     annotation = mp.annotate('hello', xy=(-0.46, 100))
+
     return annotation
 
-#energy_volume= plot_data_with_fit(volume, energy, format_x, format_y)
-data_curve = plot_data_with_fit(data, fit_curve)
+
+annotate_plot(chem_symb)
 
 
-start, end, N_dim, potential_name, potential_parameter= (-10,10, 90, 'harmonic', 100)
+volumes = linspace(min_x, max_x, len(Eos_fit))
+energy = linspace(min_y, max_y, len(Eos_fit))
+
+volume_energy= volumes, energy
+curve_plot= plot_data_with_fit(data, fit_curve, volume_energy)
 
 
 
-eigenvectors= lowest_eigenvectors(matrix, 1)
-
-
-volumes = linspace(min(data_list[0]), max(data_list[0]), len(Eos_fit))
-
+mp.show()
 
 
 
